@@ -1,7 +1,10 @@
 ---
 banner:
-  title: "Scale design & dev operations with Avocode Enterprise"
-  content: "A fully integrated suite of authentication & authoriz products, Stytch’s platform removes the headache of."
+  title: "Conectamos a personas y marcas a través de
+innovación digital."
+  content: "Un equipo con muchos años de experiencia en los tres
+perfiles esenciales para poder innovar en la industria de la
+comunicación digital."
   image: /images/banner-img.png
   button:
     label: Download The Theme
