@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Pinwheel Astro",
-    "base_url": "https://pinwheel-astro.vercel.app",
+    "title": "Naranya - Innovación en Marketing y Negocios Digitales",
+    "base_url": "https://www.naranya.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_width": "147",
-    "logo_height": "31",
-    "logo_text": "Pinwheel"
+    "logo": "/images/naranya-logo-ch.jpg",
+    "logo_width": "200",
+    "logo_height": "55",
+    "logo_text": "Naranya"
   },
 
   "settings": {
@@ -18,32 +18,32 @@
   },
 
   "call_to_action": {
-    "title": "Helping teams in the world with focus",
-    "description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "title": "¡Descubra cómo podemos transformar su presencia digital!",
+    "description": "Contáctenos hoy mismo para una consulta personalizada.",
     "button": {
-      "label": "Download The Theme",
-      "link": "https://themefisher.com/astro-themes/pinwheel-astro"
+      "label": "Solicitar Información",
+      "link": "https://www.naranya.com"
     }
   },
 
   "disqus": {
     "enable": true,
-    "shortname": "themefisher-template",
+    "shortname": "naranya-template",
     "settings": {}
   },
 
   "params": {
-    "footer_description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "email": "info@andromeda.io",
-    "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
-    "phone": "+704-555-0127",
+    "footer_description": "Más de 20 Años Conectando Marcas y Audiencias a Través de Experiencias Digitales Excepcionales",
+    "email": "info@naranya.com",
+    "location": "Los Soles 2400, Zona Loma Larga Oriente, 66260 Monterrey, N.L.",
+    "phone": "",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
+    "copyright": "Copyright © 2023 Naranya"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
-    "meta_description": "pinwheel astro"
+    "meta_author": "Naranya",
+    "meta_image": "/images/blog-single.png",
+    "meta_description": "Naranya Meta Description"
   }
 }

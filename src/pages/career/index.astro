@@ -10,7 +10,7 @@ import CareerBenifits from "@layouts/function-components/CareerBenifits";
 import JobPosts from "@layouts/function-components/JobPosts";
 import { getSinglePage } from "@lib/contentParser.astro";
 import { getTaxonomy } from "@lib/taxonomyParser.astro";
-const careerIndex = await getEntryBySlug<any, string>("careers", "-index");
+const careerIndex = await getEntryBySlug("careers", "-index");
 const { benifits, career, image } = careerIndex.data;
 const categories = await getTaxonomy("careers", "categories");
 const jobposts = await getSinglePage("careers");

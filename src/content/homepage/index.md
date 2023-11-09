@@ -1,19 +1,32 @@
 ---
 banner:
-  title: "Conectamos a personas y marcas a través de
-innovación digital."
-  content: "Un equipo con muchos años de experiencia en los tres
-perfiles esenciales para poder innovar en la industria de la
-comunicación digital."
+  title: "Innovación en Marketing y Negocios Digitales"
+  content: "Conectamos marcas y audiencias a través de experiencias digitales excepcionales que no solo conectan, sino que también cautivan a nuestra audiencia."
   image: /images/banner-img.png
   button:
-    label: Download The Theme
+    label: Solicitar Información
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
     enable: true
+intro:
+  title: "Título Intro"
+  description: "Con décadas de experiencia en nuestro haber lideramos el camino en la innovación digital, fusionando la Tecnología, el Marketing y las Telecomunicaciones (TMT) para crear soluciones que impulsan el éxito empresarial."
+  tmt_list:
+      - title: Tecnología
+        content: "Somos tan “Techies” como los qué más y sobre todo porque nos ha tocado innovar desde antes que existiera el Internet y los teléfonos móviles hasta la Inteligencia Artificial y el Internet de las Cosas"
+        color: "#24A1FF"
+        icon: briefcase #icon package react-feather-icon [https://feathericons.com]
+      - title: Marketing y Contenidos
+        content: "Si de algo sabemos es contenidos. publicidad, data y comunicación. Creamos el primer sitio de Internet en México hace casi 30 años, vendimos la primera campaña de publicidad digital a fines de los 90s y hemos seguido creando campañas de publicidad en todas las plataformas digitales que han ido surgiendo a través de los años, siempre con estrategia y creatividad enfocada a los resultados de las marcas."
+        color: "#7B5AFF"
+        icon: aperture #icon package react-feather-icon [https://feathericons.com]
+      - title: Telecomunicaciones
+        content: "Si hay que conectar a marcas con audiencias, una variable básica son las telecomunicaciones. Desde las conexiones vía Dial-up, hasta las redes WiFi y el 5G, pasando por el SMS y el MMS, siempre las hemos integrado como parte de una estrategia de comunicación y de negocio."
+        color: "#FDC528"
+        icon: umbrella  #icon package react-feather-icon [https://feathericons.com]
 
 ##key features
 key_features:
-  title: "The Highlighting Part Of Our Solution"
+  title: "La sección de keyfeatures"
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
   feature_list:
     - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
@@ -33,15 +46,6 @@ key_features:
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
       title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 #service
