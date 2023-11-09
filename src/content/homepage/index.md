@@ -5,7 +5,7 @@ banner:
   image: /images/banner-img.png
   button:
     label: Solicitar Información
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+    link: "#servicios"
     enable: true
 intro:
   title: "Título Intro"
