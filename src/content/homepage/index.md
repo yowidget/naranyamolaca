@@ -26,27 +26,19 @@ intro:
 
 ##key features
 key_features:
-  title: "La sección de keyfeatures"
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  title: "Tecnología, Marketing y Telecomunicaciones"
+  description: Con décadas de experiencia en nuestro haber lideramos el camino en la innovación digital, fusionando la Tecnología, el Marketing y las Telecomunicaciones (TMT) para crear soluciones que impulsan el éxito empresarial.
   feature_list:
     - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Paty
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Tecnología
+      content: Somos tan “Techies” como los qué más y sobre todo porque nos ha tocado innovar desde antes que existiera el Internet y los teléfonos móviles hasta la Inteligencia Artificial y el Internet de las Cosas.
     - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Marketing y Contenidos
+      content: Si de algo sabemos es contenidos. publicidad, data y comunicación. Creamos el primer sitio de Internet en México hace casi 30 años, vendimos la primera campaña de publicidad digital a fines de los 90s y hemos seguido creando campañas de publicidad en todas las plataformas digitales que han ido surgiendo a través de los años, siempre con estrategia y creatividad enfocada a los resultados de las marcas.
     - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Telecomunicaciones
+      content: Si hay que conectar a marcas con audiencias, una variable básica son las telecomunicaciones. Desde las conexiones vía Dial-up, hasta las redes WiFi y el 5G, pasando por el SMS y el MMS, siempre las hemos integrado como parte de una estrategia de comunicación y de negocio.
+
 
 #service
 service:
