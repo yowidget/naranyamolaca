@@ -10,6 +10,18 @@
       "StackName": "amplify-naranyaweb-dev-131636",
       "StackId": "arn:aws:cloudformation:us-east-2:255765776409:stack/amplify-naranyaweb-dev-131636/d56c39f0-857d-11ee-b732-0a930ca36fe1",
       "AmplifyAppId": "d243vqwvkb1qzu"
+    },
+    "categories": {
+      "function": {
+        "naranyacontactform": {
+          "sesEmail": "velez.arturo@gmail.com",
+          "deploymentBucketName": "amplify-naranyaweb-dev-131636-deployment",
+          "s3Key": "amplify-builds/naranyacontactform-4c5553535076484c4f65-build.zip"
+        }
+      },
+      "api": {
+        "naranyaweb": {}
+      }
     }
   }
 }
