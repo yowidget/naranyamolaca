@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-naranyaweb-dev-131636-authRole",
+      "UnauthRoleArn": "arn:aws:iam::255765776409:role/amplify-naranyaweb-dev-131636-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::255765776409:role/amplify-naranyaweb-dev-131636-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-naranyaweb-dev-131636-deployment",
+      "UnauthRoleName": "amplify-naranyaweb-dev-131636-unauthRole",
+      "StackName": "amplify-naranyaweb-dev-131636",
+      "StackId": "arn:aws:cloudformation:us-east-2:255765776409:stack/amplify-naranyaweb-dev-131636/d56c39f0-857d-11ee-b732-0a930ca36fe1",
+      "AmplifyAppId": "d243vqwvkb1qzu"
+    }
+  }
+}
