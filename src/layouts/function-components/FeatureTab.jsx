@@ -11,6 +11,7 @@ const FeatureTab = ({ feature_tab }) => {
             __html: marked.parseInline(feature_tab.title),
           }}
         />
+         <p class="mt-4">{feature_tab.description}</p>
       </div>
       <div className="lg:col-6">
         {feature_tab.list.map((item, index) => (

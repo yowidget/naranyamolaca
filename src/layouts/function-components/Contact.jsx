@@ -59,12 +59,12 @@ const Contact = ({ data }) => {
           />
         </div>
         <div className="form-group mb-5">
-          <label className="form-label" htmlFor="eamil">Email Adrdess</label>
+          <label className="form-label" htmlFor="email">Email Adrdess</label>
           <input
             className="form-control"
             type="email"
             id="email"
-            placeholder="Your  Email Address"
+            placeholder="Your Email Address"
             value={formState.email}
             onChange={(e) =>
               setFormState({ ...formState, email: e.target.value })

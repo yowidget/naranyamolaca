@@ -5,23 +5,27 @@ import NaranyaIntro from "@layouts/function-components/NaranyaIntro";
 import KeyFeatures from "@layouts/components/KeyFeatures.astro";
 import Testimonial from "@layouts/components/Testimonial.astro";
 import Service from "@layouts/components/Service.astro";
+import FeatureBanner from "@components/features/FeatureBanner.astro";
+import ProjecManagement from "@components/features/ProjecManagement.astro";
+
 import Cta from "@layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, key_features, service, testimonial, intro } = homepage.data;
+const features = await getEntryBySlug("features", "index");
 ---
 
 <Base>
   <!-- banner -->
   <Banner banner={banner} />
   <NaranyaIntro intro={intro} client:load />
-  <!-- key features -->
-  <KeyFeatures key_features={key_features} />
+
+  <ProjecManagement features={features.data} />
   <!-- service -->
-  <Service service={service} />
+  <!-- <Service service={service} />
   <!-- testimonial -->
-  <Testimonial testimonial={testimonial} />
+  <!-- <Testimonial testimonial={testimonial} /> -->
   <!-- call to action -->
   <Cta />
 </Base>

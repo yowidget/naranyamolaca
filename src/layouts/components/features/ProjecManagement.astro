@@ -19,6 +19,8 @@ const {
 
 <section class="section features pb-0">
   <div class="container">
+        <FeatureService feature_service={feature_service} />
+    <FeatureTab client:load feature_tab={feature_tab} />
     <div class="row">
       <div class="mx-auto text-center lg:col-7">
         <h2 set:html={markdownify(title)} />
@@ -30,7 +32,6 @@ const {
         <Projects client:load projects={management.projects} />
       </div>
     </div>
-    <FeatureService feature_service={feature_service} />
-    <FeatureTab client:load feature_tab={feature_tab} />
+
   </div>
 </section>
