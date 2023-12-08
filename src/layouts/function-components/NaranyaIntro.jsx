@@ -2,7 +2,7 @@ import * as Icon from "react-feather";
 import { humanize } from "@lib/utils/textConverter";
 const NaranyaIntro = ({ intro: { title, description, tmt_list } }) => {
   return (
-    <section className="section bg-gradient-to-r from-yellow-200 via-orange-400 to-orange-500">
+    <section className="section bg-gradient-to-r from-orange-300 to-orange-400">
       <div className="container">
         <div className="row">
           <div className="mx-auto text-center lg:col-8">

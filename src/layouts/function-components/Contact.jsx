@@ -59,7 +59,7 @@ const Contact = ({ data }) => {
           />
         </div>
         <div className="form-group mb-5">
-          <label className="form-label" htmlFor="email">Email</label>
+          <label className="form-label" htmlFor="email">Email Adrdess</label>
           <input
             className="form-control"
             type="email"
