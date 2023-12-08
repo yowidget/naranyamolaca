@@ -2,11 +2,11 @@ import * as Icon from "react-feather";
 import { humanize } from "@lib/utils/textConverter";
 const NaranyaIntro = ({ intro: { title, description, tmt_list } }) => {
   return (
-    <section className="section">
+    <section className="section bg-gradient-to-r from-yellow-200 via-orange-400 to-orange-500">
       <div className="container">
         <div className="row">
           <div className="mx-auto text-center lg:col-8">
-            <p className="mt-4">{description}</p>
+            <p className="mt-4  text-white">{description}</p>
           </div>
         </div>
         <div className="row mt-14 text-center">
@@ -14,7 +14,7 @@ const NaranyaIntro = ({ intro: { title, description, tmt_list } }) => {
             const FeatherIcon = Icon[humanize(item.icon)];
 
             return (
-              <div className="mb-10 sm:col-6 lg:col-4 " key={i}>
+              <div className="mb-10 sm:col-6 lg:col-3 bg-white shadow py-6 px-10 mx-4 rounded-xl hover:bg-gray-100 " key={i}>
                 <div className="relative">
                   <svg
                     className={`mx-auto h-[90px] w-[100px]`}

@@ -2,7 +2,7 @@
 banner:
   title: "Innovación en Marketing y Negocios Digitales"
   content: "Conectamos marcas y audiencias a través de experiencias digitales excepcionales que no solo conectan, sino que también cautivan a nuestra audiencia."
-  image: /images/banner-img.png
+  image: /images/innovacion.png
   button:
     label: Solicitar Información
     link: "#servicios"
@@ -13,16 +13,16 @@ intro:
   tmt_list:
       - title: Tecnología
         content: "Somos tan “Techies” como los qué más y sobre todo porque nos ha tocado innovar desde antes que existiera el Internet y los teléfonos móviles hasta la Inteligencia Artificial y el Internet de las Cosas"
-        color: "#24A1FF"
-        icon: briefcase #icon package react-feather-icon [https://feathericons.com]
+        color: "#0EA5E9"
+        icon: zap #icon package react-feather-icon [https://feathericons.com]
       - title: Marketing y Contenidos
         content: "Si de algo sabemos es contenidos. publicidad, data y comunicación. Creamos el primer sitio de Internet en México hace casi 30 años, vendimos la primera campaña de publicidad digital a fines de los 90s y hemos seguido creando campañas de publicidad en todas las plataformas digitales que han ido surgiendo a través de los años, siempre con estrategia y creatividad enfocada a los resultados de las marcas."
-        color: "#7B5AFF"
-        icon: aperture #icon package react-feather-icon [https://feathericons.com]
+        color: "#0EA5E9"
+        icon: star #icon package react-feather-icon [https://feathericons.com]
       - title: Telecomunicaciones
         content: "Si hay que conectar a marcas con audiencias, una variable básica son las telecomunicaciones. Desde las conexiones vía Dial-up, hasta las redes WiFi y el 5G, pasando por el SMS y el MMS, siempre las hemos integrado como parte de una estrategia de comunicación y de negocio."
-        color: "#FDC528"
-        icon: umbrella  #icon package react-feather-icon [https://feathericons.com]
+        color: "#0EA5E9"
+        icon: globe  #icon package react-feather-icon [https://feathericons.com]
 
 ##key features
 key_features:

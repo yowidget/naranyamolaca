@@ -21,7 +21,7 @@ const FeatureTab = ({ feature_tab }) => {
               tab === index ? "active" : undefined
             } relative`}
           >
-            <img className="w-full object-contain" src={item.image} />
+            <img className="w-full object-contain p-10 " src={item.image} />
           </div>
         ))}
       </div>

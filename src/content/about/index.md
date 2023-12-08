@@ -1,14 +1,11 @@
 ---
 title: "About"
-page_title: "About our company"
+page_title: "Transforma tu negocio con el experto en innovación digital y tecnología en México."
 buttons:
-  - label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+  - label: Solicitar Información
+    link: "/contact"
     enable: true
-  - label: Learn More
-    link: "#"
-    outline: true
-    enable: true
+ 
 
 # counter
 counter:

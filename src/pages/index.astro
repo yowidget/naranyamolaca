@@ -7,9 +7,18 @@ import Testimonial from "@layouts/components/Testimonial.astro";
 import Service from "@layouts/components/Service.astro";
 import FeatureBanner from "@components/features/FeatureBanner.astro";
 import ProjecManagement from "@components/features/ProjecManagement.astro";
+import PageHeader from "@components/PageHeader.astro";
 
 import Cta from "@layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
+
+
+const about = await getEntryBySlug("about", "index");
+const { counter, gallery, members } = about.data;
+const page_data = {
+  ...about.data,
+  content: about.body,
+};
 
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, key_features, service, testimonial, intro } = homepage.data;
@@ -17,6 +26,13 @@ const features = await getEntryBySlug("features", "index");
 ---
 
 <Base>
+  <section class="page-hero py-16 bg-gradient-to-bl from-orange-300 via-orange-400 to-sky-600">
+    <div class="container ">
+      <div class="page-hero-content mx-auto max-w-[768px] text-center">
+        <PageHeader page_data={page_data} />
+      </div>
+    </div>
+  </section>
   <!-- banner -->
   <Banner banner={banner} />
   <NaranyaIntro intro={intro} client:load />

@@ -5,8 +5,8 @@ banner:
   content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta.
   image: "/images/features-banner-img.png"
   button:
-    label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+    label: Conocer Más
+    link: "/contact"
     enable: true
 project_management:
   title: Canales Digitales
@@ -39,7 +39,7 @@ project_management:
   feature_service:
     title: Naranya Libre Digital Venues
     description: Construimos ecosistemas y experiencias digitales en espacios físicos en
-    image: "/images/features/feature-img-1.png"
+    image: "/images/digitalvenues.png"
     list:
       - Transporte Público
       - Open transaction with more than currencies
@@ -49,8 +49,8 @@ project_management:
       - Estadios y Centros de Entretenimiento
 
     buttons:
-      - label: Download The Theme
-        link: "https://themefisher.com/astro-themes/pinwheel-astro"
+      - label: Solicitar Información
+        link: "/contact"
         enable: true
       - label: Learn More
         link: "#"
@@ -62,11 +62,11 @@ project_management:
     list:
       - title: Smart WiFi Media
         content: Conectamos a marcas con las audiencias digitales en nuestras Redes WiFi disponibles en Venues públicos y privados durante su conexión
-        image: "/images/features/feature-img-2.png"
+        image: "/images/wifimedia.png"
       - title: Smart Data
         content: Construimos audiencias propias para marcas de consumo en base a los datos de nuestras audiencias en nuestras redes WiFi en Venues Públicos
-        image: "/images/features/feature-img-1.png"
+        image: "/images/data.png"
       - title: Smart DTC
         content: Conectamos a marcas con audiencias digitales de nuestras Redes WiFi disponibles en Venues públicos y privados cuando estas ya no están en el venue
-        image: "/images/features/feature-img-2.png"
+        image: "/images/dtc.png"
 ---
