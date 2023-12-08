@@ -51,7 +51,7 @@ const Contact = ({ data }) => {
             className="form-control"
             type="text"
             id="name"
-            placeholder="Your Full Name"
+            placeholder="Tu nombre"
             value={formState.name}
             onChange={(e) =>
               setFormState({ ...formState, name: e.target.value })
@@ -64,7 +64,7 @@ const Contact = ({ data }) => {
             className="form-control"
             type="email"
             id="email"
-            placeholder="Your Email Address"
+            placeholder="Tu correo electrónico"
             value={formState.email}
             onChange={(e) =>
               setFormState({ ...formState, email: e.target.value })
@@ -72,16 +72,16 @@ const Contact = ({ data }) => {
           />
         </div>
         <div className="form-group mb-5">
-          <label className="form-label" htmlFor="reason">Reason/Purpose</label>
+          <label className="form-label" htmlFor="reason">Interés</label>
           <select name="reason" id="reason" className="form-select" >
-            <option value="">Select reason/purpose</option>
-            <option value="investment plane">Investment Plan</option>
-            <option value="investment plane-2">Investment Plan 2</option>
-            <option value="investment plane-3">Investment Plan 3</option>
+            <option value="">Selecciona</option>
+            <option value="investment plane">Comercial</option>
+            <option value="investment plane-2">Bolsa de trabajo</option>
+            <option value="investment plane-3">Otro</option>
           </select>
         </div>
         <div className="form-group mb-5">
-          <label className="form-label" htmlFor="message">Message Here</label>
+          <label className="form-label" htmlFor="message">Mensaje</label>
           <textarea
             className="form-control h-[150px]"
             id="message"
