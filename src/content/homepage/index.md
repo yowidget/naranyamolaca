@@ -2,7 +2,7 @@
 banner:
   title: "Innovación en Marketing y Negocios Digitales"
   content: "Conectamos marcas y audiencias a través de experiencias digitales excepcionales que no solo conectan, sino que también cautivan a nuestra audiencia."
-  image: /images/innovacion.png
+  image: /images/innovacion1.png
   button:
     label: Solicitar Información
     link: "#servicios"
