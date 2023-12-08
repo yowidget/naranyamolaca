@@ -21,13 +21,13 @@ const {
   <div class="container">
         <FeatureService feature_service={feature_service} />
     <FeatureTab client:load feature_tab={feature_tab} />
-    <div class="row">
-      <div class="mx-auto text-center lg:col-7">
-        <h2 set:html={markdownify(title)} />
-        <p class="mt-4" set:html={markdownify(content)} />
-      </div>
-    </div>
     <div class="p mt-14 rounded-xl bg-white p-6 shadow-lg lg:px-12 lg:py-16">
+      <div class="row">
+        <div class="mx-auto text-center lg:col-7">
+          <h2 set:html={markdownify(title)} />
+          <p class="mt-4" set:html={markdownify(content)} />
+        </div>
+      </div>
       <div class="row">
         <Projects client:load projects={management.projects} />
       </div>

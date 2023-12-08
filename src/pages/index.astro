@@ -8,6 +8,7 @@ import Service from "@layouts/components/Service.astro";
 import FeatureBanner from "@components/features/FeatureBanner.astro";
 import ProjecManagement from "@components/features/ProjecManagement.astro";
 import PageHeader from "@components/PageHeader.astro";
+import { Image } from "@astrojs/image/components";
 
 import Cta from "@layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
@@ -43,5 +44,35 @@ const features = await getEntryBySlug("features", "index");
   <!-- testimonial -->
   <!-- <Testimonial testimonial={testimonial} /> -->
   <!-- call to action -->
+  
+<section class="section banner relative">
+  <div class="container row justify-center rounded-b-[80px] rounded-t-[20px] px-[30px] pb-[75px] pt-16 bg-[linear-gradient(70deg,_#FF8300_40%_60%,_#0CCFD9_60%)]">
+    <div class="row items-center ">
+      <div class="lg:col-6">
+        <h2 class="h1 text-white">¿Listo para maximizar tu negocio?</h2>
+        <div class="mt-8 lg:col-5 lg:mt-0">
+          <p class="text-white">
+            Contáctenos hoy mismo para una consulta personalizada.
+          </p>
+        </div>
+        <a class="btn btn-white mt-8" href="/contact">Solicitar Información</a>
+      </div>
+
+      <div class="lg:col-6">
+        <Image
+          class="w-full object-contain  p-10"
+          alt="banner"
+          src="/images/naranja.png"
+          width={603}
+          height={396}
+        />
+      </div>
+    </div>
+  </div>
+
+ 
+</section>
+
   <Cta />
+
 </Base>
