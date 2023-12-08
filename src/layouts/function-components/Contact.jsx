@@ -46,7 +46,7 @@ const Contact = ({ data }) => {
         onSubmit={handleContactFormSubmit}
       >
         <div className="form-group mb-5">
-          <label className="form-label" htmlFor="name">Full Name</label>
+          <label className="form-label" htmlFor="name">Nombre</label>
           <input
             className="form-control"
             type="text"
@@ -59,7 +59,7 @@ const Contact = ({ data }) => {
           />
         </div>
         <div className="form-group mb-5">
-          <label className="form-label" htmlFor="email">Email Adrdess</label>
+          <label className="form-label" htmlFor="email">Email</label>
           <input
             className="form-control"
             type="email"
