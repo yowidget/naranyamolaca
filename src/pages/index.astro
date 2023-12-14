@@ -2,35 +2,23 @@
 import Base from "@layouts/Base.astro";
 import Banner from "@layouts/components/Banner.astro";
 import NaranyaIntro from "@layouts/function-components/NaranyaIntro";
-import KeyFeatures from "@layouts/components/KeyFeatures.astro";
-import Testimonial from "@layouts/components/Testimonial.astro";
-import Service from "@layouts/components/Service.astro";
-import FeatureBanner from "@components/features/FeatureBanner.astro";
 import ProjecManagement from "@components/features/ProjecManagement.astro";
 import PageHeader from "@components/PageHeader.astro";
 import { Image } from "@astrojs/image/components";
 
-import Cta from "@layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 
-
-const about = await getEntryBySlug("about", "index");
-const { counter, gallery, members } = about.data;
-const page_data = {
-  ...about.data,
-  content: about.body,
-};
-
 const homepage = await getEntryBySlug("homepage", "index");
-const { banner, key_features, service, testimonial, intro } = homepage.data;
-const features = await getEntryBySlug("features", "index");
+const { hero, banner, intro, features} = homepage.data;
 ---
 
 <Base>
-  <section class="page-hero py-16  bg-[linear-gradient(290deg,_#FF8300_40%_60%,_#0EA5E9_60%)] ">
-    <div class="container ">
+  <section
+    class="page-hero bg-[linear-gradient(290deg,_#FF8300_40%_60%,_#0EA5E9_60%)] py-16"
+  >
+    <div class="container">
       <div class="page-hero-content mx-auto max-w-[768px] text-center">
-        <PageHeader page_data={page_data} />
+        <PageHeader page_data={hero} />
       </div>
     </div>
   </section>
@@ -38,41 +26,33 @@ const features = await getEntryBySlug("features", "index");
   <Banner banner={banner} />
   <NaranyaIntro intro={intro} client:load />
 
-  <ProjecManagement features={features.data} />
-  <!-- service -->
-  <!-- <Service service={service} />
-  <!-- testimonial -->
-  <!-- <Testimonial testimonial={testimonial} /> -->
-  <!-- call to action -->
-  
-<section class="section banner relative">
-  <div class="container row justify-center rounded-b-[80px] rounded-t-[20px] px-[30px] pb-[75px] pt-16 bg-[linear-gradient(70deg,_#FF8300_40%_60%,_#0EA5E9_60%)]">
-    <div class="row items-center ">
-      <div class="lg:col-6">
-        <h2 class="h1 text-white">¿Listo para maximizar tu negocio?</h2>
-        <div class="mt-8 lg:col-5 lg:mt-0">
-          <p class="text-white">
-            Contáctenos hoy mismo para una consulta personalizada.
-          </p>
-        </div>
-        <a class="btn btn-white mt-8" href="/contact">Solicitar Información</a>
-      </div>
+  <ProjecManagement features={features} />
 
-      <div class="lg:col-6">
-        <Image
-          class="w-full object-contain  p-10"
-          alt="banner"
-          src="/images/naranja.png"
-          width={603}
-          height={396}
-        />
+  <section class="section banner relative">
+    <div
+      class="container row justify-center rounded-b-[80px] rounded-t-[20px] bg-[linear-gradient(70deg,_#FF8300_40%_60%,_#0EA5E9_60%)] px-[30px] pb-[75px] pt-16"
+    >
+      <div class="row items-center">
+        <div class="lg:col-6">
+          <h2 class="h1 text-white">¿Listo para maximizar tu negocio?</h2>
+          <div class="mt-8 lg:col-5 lg:mt-0">
+            <p class="text-white">
+              Contáctenos hoy mismo para una consulta personalizada.
+            </p>
+          </div>
+          <a class="btn btn-white mt-8" href="/contact">Solicitar Información</a
+          >
+        </div>
+        <div class="lg:col-6">
+          <Image
+            class="w-full object-contain p-10"
+            alt="banner"
+            src="/images/naranja.png"
+            width={603}
+            height={396}
+          />
+        </div>
       </div>
     </div>
-  </div>
-
- 
-</section>
-
-  <!-- <Cta /> -->
-
+  </section>
 </Base>
