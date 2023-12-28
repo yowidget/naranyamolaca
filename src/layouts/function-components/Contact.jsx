@@ -27,7 +27,8 @@ const Contact = ({ data }) => {
             }
           }
         })
-       alert("Enviado")
+        window.location.href = "/contact-thanks";
+       //alert("Enviado")
       } catch (e) {
         
         alert(e)
