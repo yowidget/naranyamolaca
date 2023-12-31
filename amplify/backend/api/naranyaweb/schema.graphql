@@ -3,5 +3,9 @@ type Lead
   @auth(rules: [{ allow: public, operations: [create] }]) {
    id: ID!
    name: String!
-   email: AWSEmail!
+   email: AWSEmail!,
+   interes:String,
+   mensaje:String,
+   recaptchaToken: String,
+   recaptchaScore: Float
 }

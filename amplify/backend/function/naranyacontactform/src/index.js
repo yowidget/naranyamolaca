@@ -2,15 +2,52 @@ const { SESv2Client, SendEmailCommand } = require("@aws-sdk/client-sesv2"); // C
 
 const client = new SESv2Client({ region: "us-east-2" });
 
+
+const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
+const { DynamoDBDocumentClient, UpdateCommand } = require("@aws-sdk/lib-dynamodb");
+
+const dbClient = new DynamoDBClient({ region: "us-east-2" });
+const docClient = DynamoDBDocumentClient.from(dbClient);
+
 exports.handler = async (event) => {
   for (const streamedItem of event.Records) {
     if (streamedItem.eventName === 'INSERT') {
       //pull off items from stream
+      console.log({ item: streamedItem.dynamodb.NewImage })
+      const id = streamedItem.dynamodb.NewImage.id.S
+      const recaptchaToken = streamedItem.dynamodb.NewImage.recaptchaToken.S
       const candidateName = streamedItem.dynamodb.NewImage.name.S
       const candidateEmail = streamedItem.dynamodb.NewImage.email.S
 
-    
-      
+      const secret = "6LeraT8pAAAAAP0gbgeAaLlrWeYesjIAAv-VL0I1";
+
+      const res = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${recaptchaToken}`)
+      if (res.ok) {
+        const data = await res.json();
+        console.log({ data });
+        if (data.score) {
+
+
+
+          const dbObj = {
+            TableName: "Lead-3rr2idcsarhlzfyqkmchhmeaae-dev",
+            Key: {
+              id,
+            },
+            UpdateExpression: "set recaptchaScore = :score",
+            ExpressionAttributeValues: {
+              ":score": data.score,
+            },
+            ReturnValues: "ALL_NEW",
+          }
+          console.log({ dbObj })
+
+          const dbCommand = new UpdateCommand(dbObj);
+
+          const dbResponse = await docClient.send(dbCommand);
+          console.log(dbResponse);
+        }
+      }
       const input = { // SendEmailRequest
         FromEmailAddress: process.env.SES_EMAIL,
         // FromEmailAddressIdentityArn: "STRING_VALUE",

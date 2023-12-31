@@ -10,6 +10,10 @@ export const createLead = /* GraphQL */ `
       id
       name
       email
+      interes
+      mensaje
+      recaptchaToken
+      recaptchaScore
       createdAt
       updatedAt
       __typename
@@ -25,6 +29,10 @@ export const updateLead = /* GraphQL */ `
       id
       name
       email
+      interes
+      mensaje
+      recaptchaToken
+      recaptchaScore
       createdAt
       updatedAt
       __typename
@@ -40,6 +48,10 @@ export const deleteLead = /* GraphQL */ `
       id
       name
       email
+      interes
+      mensaje
+      recaptchaToken
+      recaptchaScore
       createdAt
       updatedAt
       __typename

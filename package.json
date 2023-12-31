@@ -24,6 +24,7 @@
     "gray-matter": "^4.0.3",
     "marked": "^4.3.0",
     "react-feather": "^2.0.10",
+    "react-google-recaptcha-v3": "^1.10.1",
     "react-icons": "^4.8.0",
     "react-lite-youtube-embed": "^2.3.52",
     "react-youtube": "^10.1.0",

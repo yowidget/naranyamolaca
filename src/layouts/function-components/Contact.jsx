@@ -3,44 +3,65 @@ import configAmplify from '../../aws-exports'
 Amplify.configure(configAmplify)
 import { generateClient } from 'aws-amplify/api'
 import { createLead } from '../../graphql/mutations'
-import { useState } from "react";
+import { useState, useCallback } from "react";
+
+import { GoogleReCaptchaProvider, useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 const client = generateClient()
 
-const Contact = ({ data }) => {
+const ContactForm = ({ data }) => {
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const [formState, setFormState] = useState({
     name: '',
     email: '',
+    interes: '',
+    mensaje: ''
   })
 
-  const handleContactFormSubmit = async (e) => {
-    e.preventDefault()
-    const { name, email } = formState
+  const handleSubmit = (async (token) => {
+
+
+
+    const { name, email, interes, mensaje } = formState
     if (name && email) {
       try {
-        
+
         await client.graphql({
           query: createLead,
-          variables:{
-            input:{
-              name, email
+          variables: {
+            input: {
+              name, email, interes, mensaje, recaptchaToken:token
             }
           }
         })
-        window.location.href = "/contact-thanks";
-       //alert("Enviado")
+       window.location.href = "/contact-thanks";
+       
       } catch (e) {
-        
+
         alert(e)
       }
     } else {
-     alert("c")
+     // console.log({ name, email })
+      alert("Favor de llenar todos los campos")
     }
-  }
+  })
+
+  const handleContactFormSubmit = (async (e) => {
+    e.preventDefault()
+    if (!executeRecaptcha) {
+      console.log('Execute recaptcha not yet available');
+      return;
+    }
+
+    const token = await executeRecaptcha('contact');
+    //console.log({ token })
+    handleSubmit(token)
+  })
+
 
   return (
     <>
-    
+
       <form
         className="lg:max-w-[484px]"
         method="POST"
@@ -60,7 +81,7 @@ const Contact = ({ data }) => {
           />
         </div>
         <div className="form-group mb-5">
-          <label className="form-label" htmlFor="email">Email Adrdess</label>
+          <label className="form-label" htmlFor="email">Email</label>
           <input
             className="form-control"
             type="email"
@@ -74,31 +95,43 @@ const Contact = ({ data }) => {
         </div>
         <div className="form-group mb-5">
           <label className="form-label" htmlFor="reason">Interés</label>
-          <select name="reason" id="reason" className="form-select" >
+          <select name="interes" id="interes" className="form-select"  onChange={(e) =>
+              setFormState({ ...formState, interes: e.target.value })
+            } >
             <option value="">Selecciona</option>
-            <option value="investment plane">Comercial</option>
-            <option value="investment plane-2">Bolsa de trabajo</option>
-            <option value="investment plane-3">Otro</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Bolsa de trabajo">Bolsa de trabajo</option>
+            <option value="Otro">Otro</option>
           </select>
         </div>
         <div className="form-group mb-5">
-          <label className="form-label" htmlFor="message">Mensaje</label>
+          <label className="form-label" htmlFor="mensaje">Mensaje</label>
           <textarea
             className="form-control h-[150px]"
-            id="message"
+            id="mensaje"
             cols="30"
-            rows="10"></textarea>
+            rows="10"
+            onChange={(e) =>
+              setFormState({ ...formState, mensaje: e.target.value })
+            }
+            ></textarea>
         </div>
 
         <button
           className="btn btn-primary block w-full"
           type="submit"
         >Solicitar Información</button>
-        
+
       </form>
 
     </>
   );
 };
+
+const Contact = () => (
+  <GoogleReCaptchaProvider reCaptchaKey="6LeraT8pAAAAAEWxiV6mEY6FHRE6n5tqOIo61hrw">
+    <ContactForm />
+  </GoogleReCaptchaProvider>
+)
 
 export default Contact;

@@ -181,6 +181,13 @@
               ],
               "Effect": "Allow",
               "Resource": "arn:aws:ses:us-east-2:255765776409:identity/velez.arturo@gmail.com"
+            },
+            {
+              "Action": [
+                "dynamodb:UpdateItem"
+              ],
+              "Effect": "Allow",
+              "Resource": "arn:aws:dynamodb:us-east-2:255765776409:table/Lead-3rr2idcsarhlzfyqkmchhmeaae-dev"
             }
           ]
         }

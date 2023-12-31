@@ -7,6 +7,10 @@ export const onCreateLead = /* GraphQL */ `
       id
       name
       email
+      interes
+      mensaje
+      recaptchaToken
+      recaptchaScore
       createdAt
       updatedAt
       __typename
@@ -19,6 +23,10 @@ export const onUpdateLead = /* GraphQL */ `
       id
       name
       email
+      interes
+      mensaje
+      recaptchaToken
+      recaptchaScore
       createdAt
       updatedAt
       __typename
@@ -31,6 +39,10 @@ export const onDeleteLead = /* GraphQL */ `
       id
       name
       email
+      interes
+      mensaje
+      recaptchaToken
+      recaptchaScore
       createdAt
       updatedAt
       __typename

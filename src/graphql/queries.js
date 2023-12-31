@@ -7,6 +7,10 @@ export const getLead = /* GraphQL */ `
       id
       name
       email
+      interes
+      mensaje
+      recaptchaToken
+      recaptchaScore
       createdAt
       updatedAt
       __typename
@@ -24,6 +28,10 @@ export const listLeads = /* GraphQL */ `
         id
         name
         email
+        interes
+        mensaje
+        recaptchaToken
+        recaptchaScore
         createdAt
         updatedAt
         __typename

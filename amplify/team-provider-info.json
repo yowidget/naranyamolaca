@@ -16,7 +16,7 @@
         "naranyacontactform": {
           "sesEmail": "velez.arturo@gmail.com",
           "deploymentBucketName": "amplify-naranyaweb-dev-131636-deployment",
-          "s3Key": "amplify-builds/naranyacontactform-4c5553535076484c4f65-build.zip"
+          "s3Key": "amplify-builds/naranyacontactform-3636643771554869736b-build.zip"
         }
       },
       "api": {
