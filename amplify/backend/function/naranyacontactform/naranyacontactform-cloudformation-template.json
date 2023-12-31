@@ -26,6 +26,9 @@
     },
     "sesEmail": {
       "Type": "String"
+    },
+    "grecaptchaSecretkey": {
+      "Type": "String"
     }
   },
   "Conditions": {
@@ -81,8 +84,40 @@
             "REGION": {
               "Ref": "AWS::Region"
             },
+            "API_NARANYAWEB_LEADTABLE_NAME": {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apinaranyawebGraphQLAPIIdOutput}:GetAtt:LeadTable:Name"
+              }
+            },
+            "API_NARANYAWEB_LEADTABLE_ARN": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:dynamodb:",
+                  {
+                    "Ref": "AWS::Region"
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId"
+                  },
+                  ":table/",
+                  {
+                    "Fn::ImportValue": {
+                      "Fn::Sub": "${apinaranyawebGraphQLAPIIdOutput}:GetAtt:LeadTable:Name"
+                    }
+                  }
+                ]
+              ]
+            },
+            "API_NARANYAWEB_GRAPHQLAPIIDOUTPUT": {
+              "Ref": "apinaranyawebGraphQLAPIIdOutput"
+            },
             "SES_EMAIL": {
               "Ref": "sesEmail"
+            },
+            "GRECAPTCHA_SECRETKEY": {
+              "Ref": "grecaptchaSecretkey"
             }
           }
         },
@@ -92,7 +127,7 @@
             "Arn"
           ]
         },
-        "Runtime": "nodejs16.x",
+        "Runtime": "nodejs18.x",
         "Layers": [],
         "Timeout": 25
       }
@@ -181,13 +216,6 @@
               ],
               "Effect": "Allow",
               "Resource": "arn:aws:ses:us-east-2:255765776409:identity/velez.arturo@gmail.com"
-            },
-            {
-              "Action": [
-                "dynamodb:UpdateItem"
-              ],
-              "Effect": "Allow",
-              "Resource": "arn:aws:dynamodb:us-east-2:255765776409:table/Lead-3rr2idcsarhlzfyqkmchhmeaae-dev"
             }
           ]
         }
@@ -247,6 +275,78 @@
           ]
         },
         "StartingPosition": "LATEST"
+      }
+    },
+    "AmplifyResourcesPolicy": {
+      "DependsOn": [
+        "LambdaExecutionRole"
+      ],
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyName": "amplify-lambda-execution-policy",
+        "Roles": [
+          {
+            "Ref": "LambdaExecutionRole"
+          }
+        ],
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "dynamodb:Update*",
+                "dynamodb:RestoreTable*",
+                "dynamodb:PartiQLUpdate"
+              ],
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:dynamodb:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":table/",
+                      {
+                        "Fn::ImportValue": {
+                          "Fn::Sub": "${apinaranyawebGraphQLAPIIdOutput}:GetAtt:LeadTable:Name"
+                        }
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:dynamodb:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":table/",
+                      {
+                        "Fn::ImportValue": {
+                          "Fn::Sub": "${apinaranyawebGraphQLAPIIdOutput}:GetAtt:LeadTable:Name"
+                        }
+                      },
+                      "/index/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       }
     }
   },

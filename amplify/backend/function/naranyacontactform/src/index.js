@@ -1,12 +1,19 @@
+/* Amplify Params - DO NOT EDIT
+  API_NARANYAWEB_GRAPHQLAPIIDOUTPUT
+  API_NARANYAWEB_LEADTABLE_ARN
+  API_NARANYAWEB_LEADTABLE_NAME
+  ENV
+  REGION
+Amplify Params - DO NOT EDIT */
 const { SESv2Client, SendEmailCommand } = require("@aws-sdk/client-sesv2"); // CommonJS import
 
-const client = new SESv2Client({ region: "us-east-2" });
+const client = new SESv2Client({ region: process.env.REGION });
 
 
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const { DynamoDBDocumentClient, UpdateCommand } = require("@aws-sdk/lib-dynamodb");
 
-const dbClient = new DynamoDBClient({ region: "us-east-2" });
+const dbClient = new DynamoDBClient({ region: process.env.REGION });
 const docClient = DynamoDBDocumentClient.from(dbClient);
 
 exports.handler = async (event) => {
@@ -19,9 +26,7 @@ exports.handler = async (event) => {
       const candidateName = streamedItem.dynamodb.NewImage.name.S
       const candidateEmail = streamedItem.dynamodb.NewImage.email.S
 
-      const secret = "6LeraT8pAAAAAP0gbgeAaLlrWeYesjIAAv-VL0I1";
-
-      const res = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${recaptchaToken}`)
+      const res = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.GRECAPTCHA_SECRETKEY}&response=${recaptchaToken}`)
       if (res.ok) {
         const data = await res.json();
         console.log({ data });
@@ -30,7 +35,7 @@ exports.handler = async (event) => {
 
 
           const dbObj = {
-            TableName: "Lead-3rr2idcsarhlzfyqkmchhmeaae-dev",
+            TableName: process.env.API_NARANYAWEB_LEADTABLE_NAME,
             Key: {
               id,
             },

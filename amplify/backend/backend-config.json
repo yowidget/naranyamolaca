@@ -25,8 +25,7 @@
       "dependsOn": [
         {
           "attributes": [
-            "GraphQLAPIIdOutput",
-            "GraphQLAPIEndpointOutput"
+            "GraphQLAPIIdOutput"
           ],
           "category": "api",
           "resourceName": "naranyaweb"
@@ -38,6 +37,14 @@
   },
   "parameters": {
     "AMPLIFY_function_naranyacontactform_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "naranyacontactform"
+        }
+      ]
+    },
+    "AMPLIFY_function_naranyacontactform_grecaptchaSecretkey": {
       "usedBy": [
         {
           "category": "function",

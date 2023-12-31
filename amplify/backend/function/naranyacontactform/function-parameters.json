@@ -4,6 +4,17 @@
     {
       "cloudFormationParameterName": "sesEmail",
       "environmentVariableName": "SES_EMAIL"
+    },
+    {
+      "cloudFormationParameterName": "grecaptchaSecretkey",
+      "environmentVariableName": "GRECAPTCHA_SECRETKEY"
     }
-  ]
+  ],
+  "permissions": {
+    "storage": {
+      "Lead:@model(appsync)": [
+        "update"
+      ]
+    }
+  }
 }

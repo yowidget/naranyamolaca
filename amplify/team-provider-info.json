@@ -14,9 +14,10 @@
     "categories": {
       "function": {
         "naranyacontactform": {
-          "sesEmail": "velez.arturo@gmail.com",
           "deploymentBucketName": "amplify-naranyaweb-dev-131636-deployment",
-          "s3Key": "amplify-builds/naranyacontactform-3636643771554869736b-build.zip"
+          "s3Key": "amplify-builds/naranyacontactform-61784a557959494c2f66-build.zip",
+          "sesEmail": "velez.arturo@gmail.com",
+          "grecaptchaSecretkey": "6LeraT8pAAAAAP0gbgeAaLlrWeYesjIAAv-VL0I1"
         }
       },
       "api": {
