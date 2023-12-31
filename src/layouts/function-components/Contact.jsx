@@ -6,6 +6,7 @@ import { createLead } from '../../graphql/mutations'
 import { useState, useCallback } from "react";
 
 import { GoogleReCaptchaProvider, useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+const GRECAPTCHA_SITEKEY = "6LeraT8pAAAAAEWxiV6mEY6FHRE6n5tqOIo61hrw";
 
 const client = generateClient()
 
@@ -129,7 +130,7 @@ const ContactForm = ({ data }) => {
 };
 
 const Contact = () => (
-  <GoogleReCaptchaProvider reCaptchaKey="6LeraT8pAAAAAEWxiV6mEY6FHRE6n5tqOIo61hrw">
+  <GoogleReCaptchaProvider reCaptchaKey={GRECAPTCHA_SITEKEY}>
     <ContactForm />
   </GoogleReCaptchaProvider>
 )
