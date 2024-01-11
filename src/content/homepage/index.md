@@ -3,7 +3,7 @@ hero:
   page_title: "Transforma tu negocio con el experto en innovación digital y tecnología en México."
   buttons:
     - label: Solicitar Información
-      link: "/contact"
+      link: "/contacto"
       enable: true
  
 banner:
@@ -80,7 +80,7 @@ features:
       - Estadios y Centros de Entretenimiento
     buttons:
       - label: Solicitar Información
-        link: "/contact"
+        link: "/contacto"
         enable: true
   feature_tab:
     title: Naranya Libre Connect
