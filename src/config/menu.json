@@ -1,13 +1,13 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
 
     {
       "name": "Contacto",
-      "url": "/contact"
+      "url": "/contacto"
     }
   ],
 
@@ -15,7 +15,7 @@
 
     {
       "name": "Contacto",
-      "url": "/contact"
+      "url": "/contacto"
     }
   ]
 }
