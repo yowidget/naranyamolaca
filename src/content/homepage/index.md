@@ -34,12 +34,30 @@ features:
   title: Canales Digitales
   management:
     projects:
-      - title: Smart Programmatic
-        content: Conectamos a las marcas con audiencias en base a su ubicación geográfica, su perfil NSE, las Apps y/o los sitios Web que utilizan, todo en base a nuestra base de datos de más de 58 millones de personas en México.
+      - title: Smart Programmatic Display
+        content: Plataforma de first party data con cerca de 60 millones de usuarios hiper-perfilados.
         icon: target  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Smart Programmatic Audio
+        content: Realiza campañas de audio sobre plataformas de streaming o radio a más de 225 millones de impresiones al mes y 20 millones de oyentes únicos.
+        icon: target  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Smart Programmatic Games
+        content: Plataforma con más de 20,000 juegos web y app que permite impactar usuarios perfilados en momentos clave.
+        icon: target  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Smart Programmatic Web Performance
+        content: Campañas dirigidas a lograr objetivos de performance en sitios web como son leads, cuestionarios, etc optimizando el tráfico a los 60 millones de usuarios.
+        icon: target  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Smart Programmatic App Performance
+        content: Realizamos campañas de que generen instalaciones, registros, compras o cualquier otro evento dentro de la App de una marca.
+        icon: smartphone  #icon package react-feather-icon [https://feathericons.com/]
+      - title: App Preloads
+        content: Instalamos la App de marcas en millones de dispositivos móviles nuevos ¡automáticamente y sin fricción!
+        icon: smartphone  #icon package react-feather-icon [https://feathericons.com/]
       - title: Smartfluencer
-        content: Servicio Integral de Micro Influencer Marketing que incluye Encontrar con nuestra plataforma de AI a los micro Influencers adecuados al perfil deseado, el Gestionar administrativa y legalmente a los micro Influencers, Producir los contenidos, Medir los resultados y Optimizar las campañas
+        content: Servicio Integral de Micro Influencer Marketing que incluye Encontrar con nuestra plataforma de AI a los micro Influencers adecuados al perfil deseado, el Gestionar administrativa y legalmente a los micro Influencers, Producir los contenidos, Medir los resultados y Optimizar las campañas.
         icon: smile  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Digital & Physical Out of Home
+        content: Publicidad OOH y DOOH en medios de transporte y aeropuertos para lograr impactar a una audiencia masiva y cautiva con largos tiempos de exposición.
+        icon: send  #icon package react-feather-icon [https://feathericons.com/]
       - title: Smart Media
         content: Creamos y operamos una revista o periódico digital con contenido de nicho para las marcas y lo conectamos con audiencias relevantes a nivel nacional y todo bajo la línea editorial de la propia marca
         icon: send  #icon package react-feather-icon [https://feathericons.com/]
@@ -49,12 +67,6 @@ features:
       - title: Ticket as a Service
         content: Habilitamos a Marcas a desarrollar estrategias de promoción y lealtad premiando a sus clientes con boletos digitales de sorteos diseñado a la medida para la marca así como boletos de diferentes servicios. 
         icon: gift  #icon package react-feather-icon [https://feathericons.com/]
-      - title: App Preloads
-        content: Instalamos la App de marcas en millones de dispositivos móviles nuevos ¡automáticamente y sin fricción!
-        icon: smartphone  #icon package react-feather-icon [https://feathericons.com/]
-      - title: App Performance
-        content: Realizamos campañas de que generen instalaciones, registros, compras o cualquier otro evento dentro de la App de una marca.
-        icon: tool  #icon package react-feather-icon [https://feathericons.com/]
   feature_service:
     title: Naranya Libre Digital Venues
     description: Construimos ecosistemas y experiencias digitales en espacios físicos en
