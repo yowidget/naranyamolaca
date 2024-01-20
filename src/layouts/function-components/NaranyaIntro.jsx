@@ -9,12 +9,12 @@ const NaranyaIntro = ({ intro: { title, description, tmt_list } }) => {
             <p className="mt-4  text-white">{description}</p>
           </div>
         </div>
-        <div className="row mt-14 justify-evenly ">
+        <div className="row mt-14 justify-evenly mx-4 ">
           {tmt_list.map((item, i) => {
             const FeatherIcon = Icon[humanize(item.icon)];
 
             return (
-              <div className="mb-10 sm:col-6 lg:col-3 bg-white shadow py-4 px-4 mx-1 rounded-xl hover:bg-gray-100 text-center" key={i}>
+              <div className="mb-10 lg:col-4 bg-white shadow py-4 px-4 mx-1 rounded-xl hover:bg-gray-100 text-center" key={i}>
                 <div className="relative">
                   <svg
                     className={`mx-auto h-[90px] w-[100px]`}

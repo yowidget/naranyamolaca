@@ -1,15 +1,25 @@
 ---
+import { markdownify } from "@lib/utils/textConverter";
+
 import Base from "@layouts/Base.astro";
 import Banner from "@layouts/components/Banner.astro";
 import NaranyaIntro from "@layouts/function-components/NaranyaIntro";
 import ProjecManagement from "@components/features/ProjecManagement.astro";
 import PageHeader from "@components/PageHeader.astro";
+import KeyFeatures from "@layouts/components/KeyFeatures.astro";
+
 import { Image } from "@astrojs/image/components";
 
 import { getEntryBySlug } from "astro:content";
 
 const homepage = await getEntryBySlug("homepage", "index");
-const { hero, banner, intro, features} = homepage.data;
+const how_it_works = await getEntryBySlug("how-it-works", "index");
+const { perfomance } = how_it_works.data;
+const how_it_works_data = {
+  ...how_it_works.data,
+  content: how_it_works.body,
+};
+const { hero, banner, intro, key_features, features } = homepage.data;
 ---
 
 <Base>
@@ -25,8 +35,34 @@ const { hero, banner, intro, features} = homepage.data;
   <!-- banner -->
   <Banner banner={banner} />
   <NaranyaIntro intro={intro} client:load />
-
   <ProjecManagement features={features} />
+  <div class="row text-center mt-14">
+
+    <h1
+    class="mb-5 mt-8"
+    >Canales Digitales</h1>
+    <!-- <p set:html={markdownify(how_it_works_data.content)} /> -->
+  </div>
+  <div class="row mt-14">
+    {
+      perfomance.map((item: any, i: number) => (
+        <div class="mt-10 text-center sm:col-6 md:col-4 md:mb-0">
+          <div
+            class={`relative mx-auto mb-8 flex h-[184px] w-[184px] items-center justify-center rounded-xl bg-white p-4 shadow-lg ${
+              perfomance.length - 1 !== i
+                ? "after:absolute after:-right-4 after:-z-[1] after:hidden after:w-full after:translate-x-full after:border-b-2 after:border-dashed after:border-primary/50 after:content-[''] md:after:block"
+                : undefined
+            }`}
+          >
+            <Image height={122} width={144} src={item.image} alt="" />
+          </div>
+          <h2 class="h5">{item.title}</h2>
+          <p class="mt-4">{item.description}</p>
+        </div>
+      ))
+    }
+  </div>
+  <KeyFeatures key_features={key_features} />
 
   <section class="section banner relative">
     <div

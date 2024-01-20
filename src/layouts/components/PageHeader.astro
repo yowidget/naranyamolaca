@@ -11,7 +11,7 @@ const { title, index_title, page_title, slug, content } = page_data || {};
       page_data?.page_title ? page_data?.page_title : page_data?.title
     )}
   />
-
+  <p class="text-white">{content}</p>
   {
     page_data.buttons && (
       <div class="mt-11 justify-center sm:flex">
