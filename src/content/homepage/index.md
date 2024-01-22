@@ -35,13 +35,13 @@ key_features:
   title: "Smart Programmatic"
   description: Conectamos a las marcas con audiencias en base a su ubicación geográfica, su perfil NSE, las Apps y/o los sitios Web que utilizan.
   feature_list:
-    - icon: "target"  #icon package react-feather-icon [https://feathericons.com/]
+    - icon: "users"  #icon package react-feather-icon [https://feathericons.com/]
       title: Display
       content: Plataforma de first party data con cerca de 60 millones de usuarios hiper-perfilados.
-    - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
+    - icon: "airplay"  #icon package react-feather-icon [https://feathericons.com/]
       title: Audio
       content: Realiza campañas de audio sobre plataformas de streaming o radio a más de 225 millones de impresiones al mes y 20 millones de oyentes únicos.
-    - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
+    - icon: "smile"  #icon package react-feather-icon [https://feathericons.com/]
       title: Games
       content: Plataforma con más de 20,000 juegos web y app que permite impactar usuarios perfilados en momentos clave.
     - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
@@ -54,7 +54,7 @@ features:
     projects:
       - title: App Performance
         content: Realizamos campañas que generan instalaciones, registros, compras o cualquier otro evento dentro de la App de una marca.
-        icon: smartphone  #icon package react-feather-icon [https://feathericons.com/]
+        icon: tag  #icon package react-feather-icon [https://feathericons.com/]
       - title: App Preloads
         content: Instalamos la App de marcas en millones de dispositivos móviles nuevos ¡automáticamente y sin fricción!
         icon: smartphone  #icon package react-feather-icon [https://feathericons.com/]
