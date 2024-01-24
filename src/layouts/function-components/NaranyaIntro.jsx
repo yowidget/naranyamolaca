@@ -6,7 +6,7 @@ const NaranyaIntro = ({ intro: { title, description, tmt_list } }) => {
       <div className="container  ">
         <div className="row ">
           <div className="mx-auto text-center lg:col-8">
-            <p className="mt-4  text-white">{description}</p>
+            <p className="mt-4 text-xl  text-white">{description}</p>
           </div>
         </div>
         <div className="row mt-14 justify-evenly mx-4 ">

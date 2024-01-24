@@ -7,18 +7,12 @@ const { title, description, feature_list } = key_features;
 ---
 
 <section class="section key-feature relative">
-  <Image
-    class="absolute left-0 top-0 -z-[1] -translate-y-1/2"
-    src="/images/feature-shape.png"
-    height={126}
-    width={63}
-    alt=""
-  />
+ 
   <div class="container">
     <div class="row justify-center text-center lg:text-start">
       <div class=" text-center">
         <h2 set:html={markdownify(title)} />
-        <p set:html={markdownify(description)} />
+        <p class="mt-4" set:html={markdownify(description)} />
       </div>
     </div>
     <HomapageFeature feature_list={feature_list} client:load />

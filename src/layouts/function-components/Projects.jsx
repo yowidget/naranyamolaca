@@ -3,14 +3,14 @@ import * as Icon from "react-feather";
 
 const Projects = ({ projects }) => {
   return (
-    <div className="col-12 ">
+    <div className="col-12  ">
       <div className="row">
         {projects.map((item, i) => {
           const FeatherIcon = Icon[humanize(item.icon)];
           return (
             <div className="lg:col-6" key={`item-${i}`}>
               <div
-                className={`flex items-center space-x-4 rounded-lg bg-[#fafafa] px-6 py-8 lg:mt-6  ${
+                className={`flex items-center rounded-lg bg-[#fafafa] px-6 py-6  mt-4 mb-4 mx-4 lg:mt-6 lg:mx-6  ${
                   projects.length - 1 === i ? "mb-0" : "mb-6 "
                 } `}
               >

@@ -1,14 +1,13 @@
 ---
 hero:
   page_title: "Innovación en Marketing y Negocios Digitales."
-
   buttons:
     - label: Solicitar Información
       link: "/contacto"
       enable: true
  
 banner:
-  content: "Conectamos marcas y audiencias a través de experiencias digitales excepcionales que no solo conectan, sino que también cautivan a nuestra audiencia."
+  content: "Conectamos a nuestros clientes con audiencias a través de experiencias digitales excepcionales que no solo conectan, sino que también cautivan."
   image: /images/innovacion1.png
   button:
     label: Solicitar Información
@@ -16,24 +15,24 @@ banner:
     enable: true
 intro:
   title: "Título Intro"
-  description: "Con décadas de experiencia en nuestro haber lideramos el camino en la innovación digital, fusionando la Tecnología, el Marketing y las Telecomunicaciones (TMT) para crear soluciones que impulsan el éxito empresarial."
+  description: "Somos un equipo con más de 20 años de experiencia en los tres perfiles esenciales para poder innovar digitalmente les llamamos nuestra fortaleza TMT"
   tmt_list:
       - title: Tecnología
-        content: "Somos tan “Techies” como los qué más y sobre todo porque nos ha tocado innovar desde antes que existiera el Internet y los teléfonos móviles hasta la Inteligencia Artificial y el Internet de las Cosas"
+        content: "Somos tan “Techies” como los qué más y sobre todo porque nos ha tocado innovar desde antes que los inicios del Internet y los teléfonos móviles hasta la Inteligencia Artificial y el Internet de las Cosas"
         color: "#0EA5E9"
         icon: zap #icon package react-feather-icon [https://feathericons.com]
-      - title: Marketing y Contenidos
-        content: "Si de algo sabemos es contenidos. publicidad, data y comunicación. Creamos el primer sitio de Internet en México hace casi 30 años, vendimos la primera campaña de publicidad digital a fines de los 90s y hemos seguido creando campañas de publicidad en todas las plataformas digitales que han ido surgiendo a través de los años, siempre con estrategia y creatividad enfocada a los resultados de las marcas."
+      - title: Media
+        content: "Si de algo sabemos es de contenidos, publicidad, data y comunicación. Creamos el primer sitio de Internet en México hace casi 30 años, vendimos la primera campaña de publicidad digital a fines de los 90s y hemos seguido creando canales de comunicación en todas las plataformas digitales que han ido surgiendo a través de los años, siempre con estrategia y creatividad enfocada a los resultados de nuestros clientes."
         color: "#0EA5E9"
         icon: star #icon package react-feather-icon [https://feathericons.com]
       - title: Telecomunicaciones
-        content: "Si hay que conectar a marcas con audiencias, una variable básica son las telecomunicaciones. Desde las conexiones vía Dial-up, hasta las redes WiFi y el 5G, pasando por el SMS y el MMS, siempre las hemos integrado como parte de una estrategia de comunicación y de negocio."
+        content: "Si hay que conectar a nuestros clientes con audiencias, una variable básica son las telecomunicaciones. Desde las conexiones vía Dial-up, hasta las redes WiFi y el 5G, pasando por el SMS y el MMS, siempre las hemos integrado a nuestras soluciones como parte de una estrategia de comunicación y de negocio.."
         color: "#0EA5E9"
         icon: globe  #icon package react-feather-icon [https://feathericons.com]
 ##key features
 key_features:
   title: "Smart Programmatic"
-  description: Conectamos a las marcas con audiencias en base a su ubicación geográfica, su perfil NSE, las Apps y/o los sitios Web que utilizan.
+  description: Conectamos a nuestros clientes con audiencias en base a su ubicación geográfica, su perfil NSE, las Apps y/o los sitios Web que utilizan.
   feature_list:
     - icon: "users"  #icon package react-feather-icon [https://feathericons.com/]
       title: Display
@@ -53,20 +52,19 @@ features:
   management:
     projects:
       - title: App Performance
-        content: Realizamos campañas que generan instalaciones, registros, compras o cualquier otro evento dentro de la App de una marca.
+        content: Realizamos estrategias digitales que generen instalaciones, registros, compras o cualquier otro evento dentro de la App de nuestro cliente.
         icon: tag  #icon package react-feather-icon [https://feathericons.com/]
       - title: App Preloads
-        content: Instalamos la App de marcas en millones de dispositivos móviles nuevos ¡automáticamente y sin fricción!
+        content:  Instalamos la App de nuestros clientes en millones de dispositivos móviles nuevos ¡automáticamente y sin fricción!
         icon: smartphone  #icon package react-feather-icon [https://feathericons.com/]
   feature_service:
     title: Naranya Libre Digital Venues
-    description: Construimos ecosistemas y experiencias digitales en espacios físicos en
+    description: "Construimos y monetizamos ecosistemas y experiencias digitales en espacios físicos en:"
     image: "/images/digitalvenues.png"
     list:
-      - Transporte Público
-      - Open transaction with more than currencies
+      - Transporte Público (Metro, Camiones y Autobuses, Aeropuertos, etc.)
       - Parques y Plazas Públicas
-      - Retailers (Supermercados, Farmacias, Tiendas, Misceláneas, etc.)
+      - Retailers (Supermercados, Tiendas de Conveniencia, Farmacias, Tiendas Departamentales, Tiendas de la Esquina, Misceláneas, etc.)
       - Centros Comerciales
       - Estadios y Centros de Entretenimiento
     buttons:
@@ -75,15 +73,15 @@ features:
         enable: true
   feature_tab:
     title: Naranya Libre Connect
-    description: Ofrecemos a marcas un nuevo canal digital para conocer e interactuar con audiencias
+    description: Ofrecemos a nuestros clientes un nuevo canal digital para conectar, conocer e interactuar con audiencias digitales dentro de nuestras plataformas.
     list:
       - title: Smart WiFi Media
-        content: Conectamos a marcas con las audiencias digitales en nuestras Redes WiFi disponibles en Venues públicos y privados durante su conexión
+        content: Conectamos a nuestros clientes con las audiencias digitales en nuestros ecosistemas digitales disponibles en espacios públicos y privados durante su conexión.
         image: "/images/wifimedia.png"
       - title: Smart Data
-        content: Construimos audiencias propias para marcas de consumo en base a los datos de nuestras audiencias en nuestras redes WiFi en Venues Públicos
+        content: Construimos audiencias propias para nuestros clientes  en base a los datos de nuestras audiencias en nuestros ecosistemas digitales  disponibles en espacios públicos.
         image: "/images/data.png"
       - title: Smart DTC
-        content: Conectamos a marcas con audiencias digitales de nuestras Redes WiFi disponibles en Venues públicos y privados cuando estas ya no están en el venue
+        content: Conectamos a nuestros clientes con audiencias  en nuestros ecosistemas digitales disponibles en espacios públicos y privados cuando estas ya no están en el venue.
         image: "/images/dtc.png"
 ---
