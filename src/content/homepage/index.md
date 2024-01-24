@@ -77,10 +77,10 @@ features:
     list:
       - title: Smart WiFi Media
         content: Conectamos a nuestros clientes con las audiencias digitales en nuestros ecosistemas digitales disponibles en espacios públicos y privados durante su conexión.
-        image: "/images/wifimedia.png"
+        image: "/images/data.png"
       - title: Smart Data
         content: Construimos audiencias propias para nuestros clientes  en base a los datos de nuestras audiencias en nuestros ecosistemas digitales  disponibles en espacios públicos.
-        image: "/images/data.png"
+        image: "/images/wifimedia.png"
       - title: Smart DTC
         content: Conectamos a nuestros clientes con audiencias  en nuestros ecosistemas digitales disponibles en espacios públicos y privados cuando estas ya no están en el venue.
         image: "/images/dtc.png"
