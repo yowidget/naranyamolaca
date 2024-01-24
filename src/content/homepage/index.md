@@ -29,6 +29,27 @@ intro:
         content: "Si hay que conectar a nuestros clientes con audiencias, una variable básica son las telecomunicaciones. Desde las conexiones vía Dial-up, hasta las redes WiFi y el 5G, pasando por el SMS y el MMS, siempre las hemos integrado a nuestras soluciones como parte de una estrategia de comunicación y de negocio.."
         color: "#0EA5E9"
         icon: globe  #icon package react-feather-icon [https://feathericons.com]
+##Clients
+clients:
+  title: 
+  description: 
+  clients_list:
+    - image: "/images/l1.jpg"
+    - image: "/images/l2.jpg"
+    - image: "/images/l3.jpg"
+    - image: "/images/l4.jpg"
+    - image: "/images/l5.jpg"
+    - image: "/images/l6.jpg"
+    - image: "/images/l7.jpg"
+    - image: "/images/l8.jpg"
+    - image: "/images/l9.jpg"
+    - image: "/images/l10.jpg"
+    - image: "/images/l11.jpg"
+    - image: "/images/l12.jpg"
+    - image: "/images/l13.jpg"
+    - image: "/images/l14.jpg"
+    - image: "/images/l15.jpg"
+    - image: "/images/l16.jpg"
 ##key features
 key_features:
   title: "Smart Programmatic"
@@ -72,7 +93,7 @@ features:
         link: "/contacto"
         enable: true
   feature_tab:
-    title: Naranya Libre Connect
+    title: Canales Phygital
     description: Ofrecemos a nuestros clientes un nuevo canal digital para conectar, conocer e interactuar con audiencias digitales dentro de nuestras plataformas.
     list:
       - title: Smart WiFi Media

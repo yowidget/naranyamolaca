@@ -7,6 +7,7 @@ import NaranyaIntro from "@layouts/function-components/NaranyaIntro";
 import ProjecManagement from "@components/features/ProjecManagement.astro";
 import PageHeader from "@components/PageHeader.astro";
 import KeyFeatures from "@layouts/components/KeyFeatures.astro";
+import Clients from "@components/Clients.astro";
 
 import { Image } from "@astrojs/image/components";
 
@@ -19,7 +20,7 @@ const how_it_works_data = {
   ...how_it_works.data,
   content: how_it_works.body,
 };
-const { hero, banner, intro, key_features, features } = homepage.data;
+const { hero, banner, intro, key_features, features , clients } = homepage.data;
 ---
 
 <Base>
@@ -33,7 +34,7 @@ const { hero, banner, intro, key_features, features } = homepage.data;
     </div>
   </section>
   <!-- banner -->
-  <Banner banner={banner} />
+  <Banner banner={banner} clients={clients} />
   <NaranyaIntro intro={intro} client:load />
   <ProjecManagement features={features} />
   <div class="row text-center mt-14">

@@ -1,27 +1,18 @@
 ---
 import { markdownify } from "@lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
-const { banner, clients } = Astro.props;
-const { title, button, image, content } = banner;
-const {  clients_list } = clients;
 
+const { clients } = Astro.props;
+const { title, description, clients_list } = clients;
+console.log({ clients });
 ---
 
-<section class="section banner relative">
+<section class="section">
   <div class="container">
-    <div class="row items-center">
-      <div class="lg:col-6">
-        <h1 class="banner-title" set:html={markdownify(title)} />
-        <p class="mt-6 mx-6 text-2xl text-justify sm:text-left" set:html={markdownify(content)} />
-      </div>
-      <div class="lg:col-6">
-        <Image
-          class="w-full object-contain  p-10"
-          alt="banner"
-          src={image}
-          width={603}
-          height={396}
-        />
+    <div class="">
+      <div class="text-center">
+        <h2 set:html={markdownify(title)} />
+        <p class="mt-4" set:html={markdownify(description)} />
       </div>
       <div class="flex items-center justify-center">
         <div class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
@@ -41,6 +32,7 @@ const {  clients_list } = clients;
             })
           }
         </div>
+      </div>
     </div>
   </div>
 </section>

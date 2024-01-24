@@ -21,7 +21,7 @@ perfomance:
     description: Con nuestra plataforma TaaS (Ticket as a Service) habilitamos a nuestros clientes a desarrollar estrategias de promoción y lealtad premiando a sus clientes con boletos digitales de rifas y sorteos 100% regulados por SEGOB y diseñados a la medida para nuestro cliente. 
     image: "/images/5.jpg"
   - title:  Connected TV Ads
-    description: Creamos planes totalmente customizados y curados para Televisión Digital. 
+    description: Creamos planes totalmente personalizados para Televisión Digital. 
     image: "/images/6.jpg"
 ---
 Descubre cómo aumentar la base de usuarios de tus aplicaciones. 
