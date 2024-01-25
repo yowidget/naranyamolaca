@@ -21,19 +21,18 @@ clients:
   clients_list:
     - image: "/images/l1.jpg"
     - image: "/images/l17.jpg"
-    - image: "/images/l2.jpg"
+    - image: "/images/l14.jpg"
     - image: "/images/l3.jpg"
     - image: "/images/l4.jpg"
     - image: "/images/l5.jpg"
     - image: "/images/l6.jpg"
     - image: "/images/l7.jpg"
     - image: "/images/l8.jpg"
-    - image: "/images/l9.jpg"
-    - image: "/images/l10.jpg"
-    - image: "/images/l11.jpg"
     - image: "/images/l12.jpg"
+    - image: "/images/l9.jpg"
+    - image: "/images/l11.jpg"
+    - image: "/images/l10.jpg"
     - image: "/images/l13.jpg"
-    - image: "/images/l14.jpg"
     - image: "/images/l15.jpg"
     - image: "/images/l16.jpg"
 intro:
@@ -57,9 +56,9 @@ gallery:
   title: Digitalización de Espacios Físicos
   description: Transformamos espacios físicos en un Ecosistema Digital generando oportunidades de generación de ingresos, fidelización y comunicación.
   images:
-    - "/images/about/gallery-img-1.png"
-    - "/images/about/gallery-img-3.png"
-    - "/images/about/gallery-img-2.png"
+    - "/images/s1.jpg"
+    - "/images/s3.jpg"
+    - "/images/s2.jpg"
 
 features:
   title: Apps Growth
@@ -74,7 +73,7 @@ features:
   feature_service_a:
     title: Naranya Libre/Smart Retail
     description: "Construimos y gestionamos ecosistemas y experiencias digitales sobre la Red WiFi de un Retailer (Supermercados, Tiendas de conveniencia, Farmacias, Tiendas Departamentales, Tiendas de la Esquina, Misceláneas, etc.) que les permite digitalizar, conocer, interactuar y comunicarse con sus clientes buscando con ello fidelizarlo así como incrementar la transaccionalidad."
-    image: "/images/digitalvenues.png"
+    image: "/images/smart-retail-1.png"
     list:
     
     buttons:

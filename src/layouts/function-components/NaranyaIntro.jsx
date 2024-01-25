@@ -35,7 +35,7 @@ const NaranyaIntro = ({ intro: { title, description, tmt_list } }) => {
                   </span>
                 </div>
                 <h4 className=" text-xl mb-4 mt-8">{item.title}</h4>
-                <p className=" px-4 text-justify">{item.content}</p>
+                <p className=" px-4 text-sm leading-relaxed text-justify">{item.content}</p>
               </div>
             );
           })}
