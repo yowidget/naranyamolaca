@@ -14,7 +14,7 @@ const NaranyaIntro = ({ intro: { title, description, tmt_list } }) => {
             const FeatherIcon = Icon[humanize(item.icon)];
 
             return (
-              <div className="mb-10 lg:col-4 bg-white shadow py-4 px-4 mx-1 rounded-xl hover:bg-gray-100 text-center" key={i}>
+              <div className="mb-10 lg:col-3 bg-white shadow py-4 px-4 mx-1 rounded-xl hover:bg-gray-100 text-center" key={i}>
                 <div className="relative">
                   <svg
                     className={`mx-auto h-[90px] w-[100px]`}
@@ -34,8 +34,8 @@ const NaranyaIntro = ({ intro: { title, description, tmt_list } }) => {
                     <FeatherIcon color={item.color} size={48} />
                   </span>
                 </div>
-                <h3 className="h4 mb-4 mt-8">{item.title}</h3>
-                <p>{item.content}</p>
+                <h4 className=" text-xl mb-4 mt-8">{item.title}</h4>
+                <p className=" px-4 text-justify">{item.content}</p>
               </div>
             );
           })}

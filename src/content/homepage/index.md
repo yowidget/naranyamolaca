@@ -13,6 +13,29 @@ banner:
     label: Solicitar Información
     link: "#servicios"
     enable: true
+
+##Clients
+clients:
+  title: 
+  description: 
+  clients_list:
+    - image: "/images/l1.jpg"
+    - image: "/images/l17.jpg"
+    - image: "/images/l2.jpg"
+    - image: "/images/l3.jpg"
+    - image: "/images/l4.jpg"
+    - image: "/images/l5.jpg"
+    - image: "/images/l6.jpg"
+    - image: "/images/l7.jpg"
+    - image: "/images/l8.jpg"
+    - image: "/images/l9.jpg"
+    - image: "/images/l10.jpg"
+    - image: "/images/l11.jpg"
+    - image: "/images/l12.jpg"
+    - image: "/images/l13.jpg"
+    - image: "/images/l14.jpg"
+    - image: "/images/l15.jpg"
+    - image: "/images/l16.jpg"
 intro:
   title: "Título Intro"
   description: "Somos un equipo con más de 20 años de experiencia en los tres perfiles esenciales para poder innovar digitalmente les llamamos nuestra fortaleza TMT"
@@ -29,27 +52,62 @@ intro:
         content: "Si hay que conectar a nuestros clientes con audiencias, una variable básica son las telecomunicaciones. Desde las conexiones vía Dial-up, hasta las redes WiFi y el 5G, pasando por el SMS y el MMS, siempre las hemos integrado a nuestras soluciones como parte de una estrategia de comunicación y de negocio.."
         color: "#0EA5E9"
         icon: globe  #icon package react-feather-icon [https://feathericons.com]
-##Clients
-clients:
-  title: 
-  description: 
-  clients_list:
-    - image: "/images/l1.jpg"
-    - image: "/images/l2.jpg"
-    - image: "/images/l3.jpg"
-    - image: "/images/l4.jpg"
-    - image: "/images/l5.jpg"
-    - image: "/images/l6.jpg"
-    - image: "/images/l7.jpg"
-    - image: "/images/l8.jpg"
-    - image: "/images/l9.jpg"
-    - image: "/images/l10.jpg"
-    - image: "/images/l11.jpg"
-    - image: "/images/l12.jpg"
-    - image: "/images/l13.jpg"
-    - image: "/images/l14.jpg"
-    - image: "/images/l15.jpg"
-    - image: "/images/l16.jpg"
+# Gallery
+gallery:
+  title: Digitalización de Espacios Físicos
+  description: Transformamos espacios físicos en un Ecosistema Digital generando oportunidades de generación de ingresos, fidelización y comunicación.
+  images:
+    - "/images/about/gallery-img-1.png"
+    - "/images/about/gallery-img-3.png"
+    - "/images/about/gallery-img-2.png"
+
+features:
+  title: Apps Growth
+  management:
+    projects:
+      - title: App Performance
+        content: Realizamos estrategias digitales que generen instalaciones, registros, compras o cualquier otro evento dentro de la App de nuestro cliente.
+        icon: tag  #icon package react-feather-icon [https://feathericons.com/]
+      - title: App Preloads
+        content:  Instalamos la App de nuestros clientes en millones de dispositivos móviles nuevos ¡automáticamente y sin fricción!
+        icon: smartphone  #icon package react-feather-icon [https://feathericons.com/]
+  feature_service_a:
+    title: Naranya Libre/Smart Retail
+    description: "Construimos y gestionamos ecosistemas y experiencias digitales sobre la Red WiFi de un Retailer (Supermercados, Tiendas de conveniencia, Farmacias, Tiendas Departamentales, Tiendas de la Esquina, Misceláneas, etc.) que les permite digitalizar, conocer, interactuar y comunicarse con sus clientes buscando con ello fidelizarlo así como incrementar la transaccionalidad."
+    image: "/images/digitalvenues.png"
+    list:
+    
+    buttons:
+      - label: Solicitar Información
+        link: "/contacto"
+        enable: false
+  feature_service_b:
+    title: Naranya Libre/Digital Venues
+    description: "Construimos y monetizamos ecosistemas y experiencias digitales en espacios físicos en:"
+    image: "/images/digitalvenues.png"
+    list:
+      - Transporte Público (Metro, Camiones y Autobuses, Aeropuertos, etc.)
+      - Parques y Plazas Públicas
+      - Retailers (Supermercados, Tiendas de Conveniencia, Farmacias, Tiendas Departamentales, Tiendas de la Esquina, Misceláneas, etc.)
+      - Centros Comerciales
+      - Estadios y Centros de Entretenimiento
+    buttons:
+      - label: Solicitar Información
+        link: "/contacto"
+        enable: false
+  feature_tab:
+    title: Canales Phygital
+    description: Ofrecemos a nuestros clientes un nuevo canal digital para conectar, conocer e interactuar con audiencias digitales dentro de nuestras plataformas.
+    list:
+      - title: Smart WiFi Media
+        content: Conectamos a nuestros clientes con las audiencias digitales en nuestros ecosistemas digitales disponibles en espacios públicos y privados durante su conexión.
+        image: "/images/data.png"
+      - title: Smart Data
+        content: Construimos audiencias propias para nuestros clientes  en base a los datos de nuestras audiencias en nuestros ecosistemas digitales  disponibles en espacios públicos.
+        image: "/images/wifimedia.png"
+      - title: Smart DTC
+        content: Conectamos a nuestros clientes con audiencias  en nuestros ecosistemas digitales disponibles en espacios públicos y privados cuando estas ya no están en el venue.
+        image: "/images/dtc.png"
 ##key features
 key_features:
   title: "Smart Programmatic"
@@ -68,41 +126,4 @@ key_features:
       title: Web
       content: Campañas dirigidas a lograr objetivos de performance en sitios web como son leads, cuestionarios, etc optimizando el tráfico a los 60 millones de usuarios.
 
-features:
-  title: Apps Growth
-  management:
-    projects:
-      - title: App Performance
-        content: Realizamos estrategias digitales que generen instalaciones, registros, compras o cualquier otro evento dentro de la App de nuestro cliente.
-        icon: tag  #icon package react-feather-icon [https://feathericons.com/]
-      - title: App Preloads
-        content:  Instalamos la App de nuestros clientes en millones de dispositivos móviles nuevos ¡automáticamente y sin fricción!
-        icon: smartphone  #icon package react-feather-icon [https://feathericons.com/]
-  feature_service:
-    title: Naranya Libre Digital Venues
-    description: "Construimos y monetizamos ecosistemas y experiencias digitales en espacios físicos en:"
-    image: "/images/digitalvenues.png"
-    list:
-      - Transporte Público (Metro, Camiones y Autobuses, Aeropuertos, etc.)
-      - Parques y Plazas Públicas
-      - Retailers (Supermercados, Tiendas de Conveniencia, Farmacias, Tiendas Departamentales, Tiendas de la Esquina, Misceláneas, etc.)
-      - Centros Comerciales
-      - Estadios y Centros de Entretenimiento
-    buttons:
-      - label: Solicitar Información
-        link: "/contacto"
-        enable: true
-  feature_tab:
-    title: Canales Phygital
-    description: Ofrecemos a nuestros clientes un nuevo canal digital para conectar, conocer e interactuar con audiencias digitales dentro de nuestras plataformas.
-    list:
-      - title: Smart WiFi Media
-        content: Conectamos a nuestros clientes con las audiencias digitales en nuestros ecosistemas digitales disponibles en espacios públicos y privados durante su conexión.
-        image: "/images/data.png"
-      - title: Smart Data
-        content: Construimos audiencias propias para nuestros clientes  en base a los datos de nuestras audiencias en nuestros ecosistemas digitales  disponibles en espacios públicos.
-        image: "/images/wifimedia.png"
-      - title: Smart DTC
-        content: Conectamos a nuestros clientes con audiencias  en nuestros ecosistemas digitales disponibles en espacios públicos y privados cuando estas ya no están en el venue.
-        image: "/images/dtc.png"
 ---

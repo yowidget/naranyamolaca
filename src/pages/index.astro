@@ -8,7 +8,7 @@ import ProjecManagement from "@components/features/ProjecManagement.astro";
 import PageHeader from "@components/PageHeader.astro";
 import KeyFeatures from "@layouts/components/KeyFeatures.astro";
 import Clients from "@components/Clients.astro";
-
+import Gallery from "@components/about/Gallery.astro";
 import { Image } from "@astrojs/image/components";
 
 import { getEntryBySlug } from "astro:content";
@@ -20,7 +20,7 @@ const how_it_works_data = {
   ...how_it_works.data,
   content: how_it_works.body,
 };
-const { hero, banner, intro, key_features, features , clients } = homepage.data;
+const { hero, banner, intro, key_features, features , clients, gallery } = homepage.data;
 ---
 
 <Base>
@@ -36,6 +36,7 @@ const { hero, banner, intro, key_features, features , clients } = homepage.data;
   <!-- banner -->
   <Banner banner={banner} clients={clients} />
   <NaranyaIntro intro={intro} client:load />
+  <Gallery gallery={gallery} />
   <ProjecManagement features={features} />
   <div class="row text-center mt-14">
 

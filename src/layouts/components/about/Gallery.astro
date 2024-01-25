@@ -1,7 +1,7 @@
 ---
 import { markdownify } from "@lib/utils/textConverter";
 const { gallery } = Astro.props;
-const { title, images } = gallery;
+const { title, description, images } = gallery;
 ---
 
 <section class="section">
@@ -9,6 +9,7 @@ const { title, images } = gallery;
     <div class="row justify-center text-center">
       <div class="col-8">
         <h2 set:html={markdownify(title)} />
+        <div class="mt-4" set:html={markdownify(description)} />
       </div>
     </div>
 
@@ -26,13 +27,13 @@ const { title, images } = gallery;
         <div class="js-shuffle-sizer col-1"></div>
       </div>
       <img
-        class="absolute -bottom-5 -left-5 -z-[1]"
-        src="images/shape-2.png"
+        class="absolute -bottom-5 -left-10 -z-[1] w-20"
+        src="images/naranya-Icono-logo-color.png"
         alt=""
       />
       <img
         class="absolute -right-5 bottom-20 -z-[1] h-16 w-16"
-        src="images/shape.png"
+        src="images/naranya-Icono-logo-color.png"
         alt=""
       />
     </div>

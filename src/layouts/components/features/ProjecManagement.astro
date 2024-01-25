@@ -5,13 +5,14 @@ import { markdownify } from "@lib/utils/textConverter";
 import FeatureService from "./FeatureService.astro";
 
 const {
-  features: { title, content, management, feature_service, feature_tab },
+  features: { title, content, management, feature_service_a,feature_service_b, feature_tab },
 } = Astro.props;
 ---
 
 <section class="section features pb-0">
   <div class="container">
-    <FeatureService feature_service={feature_service} />
+    <FeatureService feature_service={feature_service_a} />
+    <FeatureService feature_service={feature_service_b} />
     <FeatureTab client:load feature_tab={feature_tab} />
     <div class="p mt-14 rounded-xl bg-white p-6 shadow-lg lg:px-12 lg:py-16">
       <div class="row">
