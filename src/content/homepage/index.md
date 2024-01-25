@@ -56,9 +56,8 @@ gallery:
   title: Digitalización de Espacios Físicos
   description: Transformamos espacios físicos en un Ecosistema Digital generando oportunidades de generación de ingresos, fidelización y comunicación.
   images:
-    - "/images/s1.jpg"
-    - "/images/s3.jpg"
-    - "/images/s2.jpg"
+    - "/images/farmacia-wifi.jpg"
+    - "/images/transporte-wifi.jpg"
 
 features:
   title: Apps Growth
@@ -73,7 +72,7 @@ features:
   feature_service_a:
     title: Naranya Libre/Smart Retail
     description: "Construimos y gestionamos ecosistemas y experiencias digitales sobre la Red WiFi de un Retailer (Supermercados, Tiendas de conveniencia, Farmacias, Tiendas Departamentales, Tiendas de la Esquina, Misceláneas, etc.) que les permite digitalizar, conocer, interactuar y comunicarse con sus clientes buscando con ello fidelizarlo así como incrementar la transaccionalidad."
-    image: "/images/smart-retail-1.png"
+    image: "/images/700x400-smart-retail.png"
     list:
     
     buttons:
@@ -83,7 +82,7 @@ features:
   feature_service_b:
     title: Naranya Libre/Digital Venues
     description: "Construimos y monetizamos ecosistemas y experiencias digitales en espacios físicos en:"
-    image: "/images/digitalvenues.png"
+    image: "/images/700x400-venues.png"
     list:
       - Transporte Público (Metro, Camiones y Autobuses, Aeropuertos, etc.)
       - Parques y Plazas Públicas
