@@ -16,8 +16,8 @@ banner:
 
 ##Clients
 clients:
-  title: 
-  description: 
+  title: Marcas que han confiado en nosotros
+  description:
   clients_list:
     - image: "/images/l1.jpg"
     - image: "/images/l17.jpg"

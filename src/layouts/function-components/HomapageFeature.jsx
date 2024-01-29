@@ -18,7 +18,7 @@ const HomapageFeature = ({ feature_list }) => {
             <div  className="relative inline-flex h-24 w-24 items-center justify-center p-3">
 
               <span className="icon mt-4">
-                <FeatherIcon color="#FF8300" />
+                <FeatherIcon color="#0EA5E9" />
               </span>
               <svg
                 className="absolute left-0 top-0 h-24 w-24 "

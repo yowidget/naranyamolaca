@@ -3,7 +3,7 @@ import { markdownify } from "@lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
 const { banner, clients } = Astro.props;
 const { title, button, image, content } = banner;
-const {  clients_list } = clients;
+const {  clients_list, title: title_clients} = clients;
 
 ---
 
@@ -23,7 +23,8 @@ const {  clients_list } = clients;
           height={396}
         />
       </div>
-      <div class="flex items-center justify-center">
+      <div class="flex  flex-col items-center justify-center ">
+        <h2 class="text-right text-2xl md:text-4xl " set:html={markdownify(title_clients)} />
         <div class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
           {
             clients_list.map((item: any) => {
