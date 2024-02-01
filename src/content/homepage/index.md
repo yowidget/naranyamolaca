@@ -1,6 +1,6 @@
 ---
 hero:
-  page_title: "Innovación en Marketing y Negocios Digitales."
+  page_title: "Innovación en Marketing y Negocios Digitales"
   buttons:
     - label: Solicitar Información
       link: "/contacto"

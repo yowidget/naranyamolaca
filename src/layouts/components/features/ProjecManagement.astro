@@ -3,17 +3,21 @@ import FeatureTab from "@layouts/function-components/FeatureTab";
 import Projects from "@layouts/function-components/Projects";
 import { markdownify } from "@lib/utils/textConverter";
 import FeatureService from "./FeatureService.astro";
+import KeyFeatures from "@layouts/components/KeyFeatures.astro";
 
 const {
   features: { title, content, management, feature_service_a,feature_service_b, feature_tab },
 } = Astro.props;
+
+const {  key_features } = Astro.props;
 ---
 
 <section class="">
   <div class="container">
     <FeatureService feature_service={feature_service_a} />
     <FeatureService feature_service={feature_service_b} />
-    <FeatureTab client:load feature_tab={feature_tab} />
+    <KeyFeatures key_features={key_features} />
+
     <div class="p mt-14 rounded-xl bg-white p-6 shadow-lg lg:px-12 lg:py-16">
       <div class="row">
         <div class="mx-auto text-center lg:col-7">
@@ -25,5 +29,6 @@ const {
         <Projects client:load projects={management.projects} />
       </div>
     </div>
+    <FeatureTab client:load feature_tab={feature_tab} />
   </div>
 </section>
