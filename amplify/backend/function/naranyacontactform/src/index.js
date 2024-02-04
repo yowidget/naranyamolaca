@@ -25,6 +25,8 @@ exports.handler = async (event) => {
       const recaptchaToken = streamedItem.dynamodb.NewImage.recaptchaToken.S
       const candidateName = streamedItem.dynamodb.NewImage.name.S
       const candidateEmail = streamedItem.dynamodb.NewImage.email.S
+      const candidateInteres = streamedItem.dynamodb.NewImage.interes.S
+      const candidateMensaje = streamedItem.dynamodb.NewImage.mensaje.S
 
       const res = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.GRECAPTCHA_SECRETKEY}&response=${recaptchaToken}`)
       if (res.ok) {
@@ -52,43 +54,51 @@ exports.handler = async (event) => {
           const dbResponse = await docClient.send(dbCommand);
           console.log(dbResponse);
         }
-      }
-      const input = { // SendEmailRequest
-        FromEmailAddress: process.env.SES_EMAIL,
-        // FromEmailAddressIdentityArn: "STRING_VALUE",
-        Destination: { // Destination
-          ToAddresses: [ // EmailAddressList
-            process.env.SES_EMAIL,
-          ],
+        if (Number(data.score) > 0.6) {
+          const input = { // SendEmailRequest
+            FromEmailAddress: process.env.SES_EMAIL,
+            // FromEmailAddressIdentityArn: "STRING_VALUE",
+            Destination: { // Destination
+              ToAddresses: [ // EmailAddressList
+                process.env.SES_EMAIL,
+              ],
 
-        },
-        ReplyToAddresses: [
-          process.env.SES_EMAIL,
-        ],
-        Content: { // EmailContent
-          Simple: { // Message
-            Subject: { // Content
-              Data: "Contacto Registrado", // required
-              // Charset: "STRING_VALUE",
             },
-            Body: { // Body
-              Text: {
-                Data: `El contacto ${candidateEmail} ha sido registrado `, // required
-                // Charset: "STRING_VALUE",
-              },
-              Html: {
-                Data: `El contacto <h1> ${candidateEmail} </h1> ha sido registrado `, // required
-                // Charset: "STRING_VALUE",
+            ReplyToAddresses: [
+              process.env.SES_EMAIL,
+            ],
+            Content: { // EmailContent
+              Simple: { // Message
+                Subject: { // Content
+                  Data: "Contacto Web", // required
+                  // Charset: "STRING_VALUE",
+                },
+                Body: { // Body
+                  Text: {
+                    Data: `Se ha registrado ${candidateName} ${candidateEmail} bajo el interés: ${candidateInteres}.
+                    "${candidateMensaje}"`, // required
+                    // Charset: "STRING_VALUE",
+                  },
+                  Html: {
+                    Data: `Se ha registrado <b>${candidateName}</b> ${candidateEmail} bajo el interés: <b>${candidateInteres}</b>.
+                    "${candidateMensaje}"`, // required
+                    // Charset: "STRING_VALUE",
+                  }
+                }
               }
             }
-          }
-        }
-      };
+          };
 
-      console.log({ input })
-      const command = new SendEmailCommand(input);
-      const response = await client.send(command);
-      console.log({ response })
+          console.log({ input })
+          const command = new SendEmailCommand(input);
+          const response = await client.send(command);
+          console.log({ response })
+        }
+      } else {
+        console.log("Posible bot")
+
+      }
+
 
     }
   }
