@@ -15,6 +15,7 @@
     "@astrojs/mdx": "^0.19.0",
     "@astrojs/rss": "^2.4.0",
     "astro": "^2.3.2",
+    "astro-analytics": "^2.7.0",
     "astro-auto-import": "^0.3.0",
     "aws-amplify": "^6.0.3",
     "date-fns": "^2.30.0",
