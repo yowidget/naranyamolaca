@@ -72,7 +72,7 @@ features:
   feature_service_a:
     title: Naranya Libre/Smart Retail
     description: "Construimos y gestionamos ecosistemas y experiencias digitales sobre la Red WiFi de un Retailer (Supermercados, Tiendas de conveniencia, Farmacias, Tiendas Departamentales, Tiendas de la Esquina, Misceláneas, etc.) que les permite digitalizar, conocer, interactuar y comunicarse con sus clientes buscando con ello fidelizarlo así como incrementar la transaccionalidad."
-    image: "/images/700x400-smart-retail.png"
+    image: "/images/700x400-smart-retail-2.png"
     list:
     
     buttons:
@@ -82,7 +82,7 @@ features:
   feature_service_b:
     title: Naranya Libre/Digital Venues
     description: "Construimos y monetizamos ecosistemas y experiencias digitales en espacios físicos en:"
-    image: "/images/700x400-venues.png"
+    image: "/images/700x400-smart-venues-2.png"
     list:
       - Transporte Público (Metro, Camiones y Autobuses, Aeropuertos, etc.)
       - Parques y Plazas Públicas

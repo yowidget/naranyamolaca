@@ -33,9 +33,6 @@ exports.handler = async (event) => {
         const data = await res.json();
         console.log({ data });
         if (data.score) {
-
-
-
           const dbObj = {
             TableName: process.env.API_NARANYAWEB_LEADTABLE_NAME,
             Key: {
@@ -53,53 +50,50 @@ exports.handler = async (event) => {
 
           const dbResponse = await docClient.send(dbCommand);
           console.log(dbResponse);
-        }
-        if (Number(data.score) > 0.6) {
-          const input = { // SendEmailRequest
-            FromEmailAddress: process.env.SES_EMAIL,
-            // FromEmailAddressIdentityArn: "STRING_VALUE",
-            Destination: { // Destination
-              ToAddresses: [ // EmailAddressList
+
+          if (Number(data.score) > 0.6) {
+            const input = { // SendEmailRequest
+              FromEmailAddress: process.env.SES_EMAIL,
+              // FromEmailAddressIdentityArn: "STRING_VALUE",
+              Destination: { // Destination
+                ToAddresses: [ // EmailAddressList
+                  process.env.SES_EMAIL,
+                ],
+
+              },
+              ReplyToAddresses: [
                 process.env.SES_EMAIL,
               ],
-
-            },
-            ReplyToAddresses: [
-              process.env.SES_EMAIL,
-            ],
-            Content: { // EmailContent
-              Simple: { // Message
-                Subject: { // Content
-                  Data: "Contacto Web", // required
-                  // Charset: "STRING_VALUE",
-                },
-                Body: { // Body
-                  Text: {
-                    Data: `Se ha registrado ${candidateName} ${candidateEmail} bajo el interés: ${candidateInteres}.
-                    "${candidateMensaje}"`, // required
+              Content: { // EmailContent
+                Simple: { // Message
+                  Subject: { // Content
+                    Data: "Contacto Web", // required
                     // Charset: "STRING_VALUE",
                   },
-                  Html: {
-                    Data: `Se ha registrado <b>${candidateName}</b> ${candidateEmail} bajo el interés: <b>${candidateInteres}</b>.
+                  Body: { // Body
+                    Text: {
+                      Data: `Se ha registrado ${candidateName} ${candidateEmail} bajo el interés: ${candidateInteres}.
                     "${candidateMensaje}"`, // required
-                    // Charset: "STRING_VALUE",
+                      // Charset: "STRING_VALUE",
+                    },
+                    Html: {
+                      Data: `Se ha registrado <b>${candidateName}</b> ${candidateEmail} bajo el interés: <b>${candidateInteres}</b>.
+                    "${candidateMensaje}"`, // required
+                      // Charset: "STRING_VALUE",
+                    }
                   }
                 }
               }
-            }
-          };
-
-          console.log({ input })
-          const command = new SendEmailCommand(input);
-          const response = await client.send(command);
-          console.log({ response })
+            };
+            console.log({ input })
+            const command = new SendEmailCommand(input);
+            const response = await client.send(command);
+            console.log({ response })
+          } else {
+            console.log("Bot")
+          }
         }
-      } else {
-        console.log("Posible bot")
-
       }
-
-
     }
   }
   return { status: 'done' }
