@@ -40,10 +40,10 @@
     "categories": {
       "function": {
         "naranyacontactform": {
-          "sesEmail": "info@naranya.com",
-          "grecaptchaSecretkey": "6Ld3wGMpAAAAAGtn7TNxbTjhNoPTYuHPT0Kd2cGd",
           "deploymentBucketName": "amplify-naranyaweb-prd-193158-deployment",
-          "s3Key": "amplify-builds/naranyacontactform-62323848613855307430-build.zip"
+          "s3Key": "amplify-builds/naranyacontactform-74335a325a3043386266-build.zip",
+          "sesEmail": "info@naranya.com",
+          "grecaptchaSecretkey": "6Ld3wGMpAAAAAOFAKPqfm8L-dK9ICoiXiiiHe0TL"
         },
         "naranyaweb": {}
       },
