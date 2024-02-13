@@ -39,24 +39,21 @@ const title = "Title"
   <!-- banner -->
   <Banner banner={banner} clients={clients} />
   <NaranyaIntro intro={intro} client:load />
-  <div class="justify-center flex">
-
-    <Image height={540} width={960} src="/images/funnel.png" alt="" />
-  </div>
-
   <div class="justify-center flex mt-8">
     <ul
     class=" inline-flex h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light px-4 py-2"
   >
     <li class="leading-none text-dark">
-      <a href="/" class="inline-flex items-center text-primary">
-      
-        <span class="text-sm leading-none">Nuestros Servicios</span>
-      </a>
+      <span class="text-sm leading-none text-primary">Nuestros Servicios</span>
     </li>
     
   </ul>
   </div>
+  <div class="justify-center flex">
+
+    <Image height={540} width={960} src="/images/funnel-transparente.png" alt="" />
+  </div>
+
   <Gallery gallery={gallery} />
   <ProjecManagement features={features}  key_features={key_features} />
   <!-- <KeyFeatures key_features={key_features} /> -->

@@ -57,7 +57,7 @@ gallery:
   description: Transformamos espacios físicos en un Ecosistema Digital generando oportunidades de generación de ingresos, fidelización y comunicación.
   images:
     - "/images/farmacia-wifi.jpg"
-    - "/images/transporte-wifi.jpg"
+    - "/images/transporte-publico-wifi-blanco.jpg"
 
 features:
   title: Apps Growth
