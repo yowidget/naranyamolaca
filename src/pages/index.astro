@@ -20,10 +20,11 @@ const how_it_works_data = {
   ...how_it_works.data,
   content: how_it_works.body,
 };
-const { hero, banner, intro, key_features, features , clients, gallery } = homepage.data;
-const index_title = "Home"
-const page_title = "Servicios"
-const title = "Title"
+const { hero, banner, intro, key_features, features, clients, gallery } =
+  homepage.data;
+const index_title = "Home";
+const page_title = "Servicios";
+const title = "Title";
 ---
 
 <Base>
@@ -40,28 +41,27 @@ const title = "Title"
   <Banner banner={banner} clients={clients} />
   <NaranyaIntro intro={intro} client:load />
   <div class="justify-center flex mt-8">
-    <ul
-    class=" inline-flex h-8 items-center justify-center space-x-2  px-4 py-2"
-  >
-    <li class="leading-none text-dark">
-      <span class="text-md leading-none text-primary">Nuestros Servicios</span>
-    </li>
-    
-  </ul>
+    <ul class="inline-flex h-8 items-center justify-center space-x-2 px-4 py-2">
+      <li class="leading-none text-dark">
+        <span class="text-md leading-none text-primary">Nuestros Servicios</span
+        >
+      </li>
+    </ul>
   </div>
   <div class="justify-center flex">
-
-    <Image height={540} width={960} src="/images/funnel-transparente.png" alt="" />
+    <Image
+      height={607}
+      width={1080}
+      src="/images/1080x607funnel.png"
+      alt=""
+    />
   </div>
 
   <Gallery gallery={gallery} />
-  <ProjecManagement features={features}  key_features={key_features} />
+  <ProjecManagement features={features} key_features={key_features} />
   <!-- <KeyFeatures key_features={key_features} /> -->
   <div class="row text-center mt-14">
-
-    <h1
-    class="mb-5 mt-8"
-    >{how_it_works.data.title}</h1>
+    <h1 class="mb-5 mt-8">{how_it_works.data.title}</h1>
     <!-- <p set:html={markdownify(how_it_works_data.content)} /> -->
   </div>
   <div class="row m-8 sm:m-14 mt-14">
@@ -90,13 +90,16 @@ const title = "Title"
     >
       <div class="row items-center">
         <div class="lg:col-6">
-          <h2 class="h1 text-white">¡Estamos listos para maximizar tu negocio!</h2>
+          <h2 class="h1 text-white">
+            ¡Estamos listos para maximizar tu negocio!
+          </h2>
           <div class="mt-8 lg:col-5 lg:mt-0">
             <p class="text-white">
               Contáctanos hoy mismo para una consulta personalizada.
             </p>
           </div>
-          <a class="btn btn-white mt-8" href="/contacto">Solicitar Información</a
+          <a class="btn btn-white mt-8" href="/contacto"
+            >Solicitar Información</a
           >
         </div>
         <div class="lg:col-6">
