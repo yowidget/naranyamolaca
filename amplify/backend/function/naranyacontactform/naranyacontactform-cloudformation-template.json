@@ -215,7 +215,7 @@
                 "ses:SendEmail"
               ],
               "Effect": "Allow",
-              "Resource": "arn:aws:ses:us-east-2:719739296675:identity/info@naranya.com"
+              "Resource": "arn:aws:ses:us-east-2:255765776409:identity/velez.arturo@gmail.com"
             }
           ]
         }
